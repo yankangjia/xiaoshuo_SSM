@@ -14,18 +14,6 @@
 <link rel="stylesheet" href="/dist/css/novel/whole.min.css">
 <script src="/dist/bootstrap/js/bootstrap.min.js"></script>
 <style>
-    ol, ul {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    a {
-        color: #333333;
-        text-decoration: none;
-    }
-    a:hover {
-        color: #dd0000;
-        text-decoration: none;
-    }
     .input-group-addon {
         padding: 0;
 

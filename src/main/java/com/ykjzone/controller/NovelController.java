@@ -187,8 +187,10 @@ public class NovelController {
                 break;
             }
         }
-//        if(category == null || category.length == 0)
-////            return 404;
+        if(category[0] == null)
+            return "redirect:/404";
+        System.out.println("category_en_name" + category[0]);
+        System.out.println("category_ch_name" + category[1]);
         model.addAttribute("category_en_name",category[0]);
         model.addAttribute("category_ch_name",category[1]);;
         Category c = categoryService.getAndTagsByName(category[1]);
@@ -196,8 +198,11 @@ public class NovelController {
         model.addAttribute("all_category_name",Category.CATEGORY_NAME);
         model.addAttribute("category",c);
 
+        // 获取推荐小说
+        NovelExample recommend_example = new NovelExample();
+        recommend_example.createCriteria().andCategory_idEqualTo(c.getId()).andIs_recommendEqualTo(true);
         PageHelper.offsetPage(0,15);
-        List<Novel> recommend_novels = novelService.getRecommendNovels(true);
+        List<Novel> recommend_novels = novelService.getByExampleWithBLOBs(recommend_example);
         List<Novel> recommend_novels_1_5 = new ArrayList<>();
         List<Novel> recommend_novels_6_15 = new ArrayList<>();
         for(int i = 0; i < recommend_novels.size(); i++){
@@ -207,12 +212,20 @@ public class NovelController {
                 recommend_novels_6_15.add(recommend_novels.get(i));
         }
 
+        // 获取小说排名
+        NovelExample rank_example = new NovelExample();
+        rank_example.createCriteria().andCategory_idEqualTo(c.getId());
+        rank_example.setOrderByClause("views desc");
         PageHelper.offsetPage(0,10);
-        List<Novel> rank_novels = novelService.getRankNovels();
+        List<Novel> rank_novels = novelService.getByExampleWithBLOBs(rank_example);
         Novel rank_novels_1 = rank_novels.remove(0);
 
+        // 获取新书
+        NovelExample new_example = new NovelExample();
+        new_example.createCriteria().andCategory_idEqualTo(c.getId());
+        new_example.setOrderByClause("pub_date desc");
         PageHelper.offsetPage(0,19);
-        List<Novel> new_novels = novelService.getNewNovels();
+        List<Novel> new_novels = novelService.getByExampleWithBLOBs(new_example);
         Novel new_novels_1 = null;
         List<Novel> new_novels_2_10 = new ArrayList<>();
         List<Novel> new_novels_11_19 = new ArrayList<>();
@@ -232,5 +245,14 @@ public class NovelController {
         model.addAttribute("new_novels_2_10",new_novels_2_10);
         model.addAttribute("new_novels_11_19",new_novels_11_19);
         return "novel/category";
+    }
+
+    @RequestMapping("/404")
+    public String http404(Model model){
+        PageHelper.offsetPage(0,10);
+        List<Novel> recommend_novels = novelService.getRecommendNovels(false);
+        System.out.println(recommend_novels.size());
+        model.addAttribute("recommend_novels",recommend_novels);
+        return "error/404";
     }
 }

@@ -65,4 +65,15 @@
   <session-config>
     <session-timeout>1209600</session-timeout>
   </session-config>
+
+  <!--404-->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/404</location>
+  </error-page>
+  <!--500-->
+  <error-page>
+    <error-code>500</error-code>
+    <location>/500</location>
+  </error-page>
 </web-app>

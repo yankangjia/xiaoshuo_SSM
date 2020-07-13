@@ -55,9 +55,9 @@
                             <li><a href="#">${tag.name}</a></li>
                         </c:forEach>
                         <b>|</b>
-                        <li><a href="/novel/rank?category_id=${category.id}">${category.name}排行</a></li>
-                        <li><a href="/novel/whole?category_id=${category.id}&is_complete=1">${category.name}完本</a></li>
-                        <li><a href="/novel/whole?category_id=${category.id}&is_free=1">${category.name}免费</a></li>
+                        <li><a href="/rank?category_id=${category.id}">${category.name}排行</a></li>
+                        <li><a href="/whole?category_id=${category.id}&is_complete=1">${category.name}完本</a></li>
+                        <li><a href="/whole?category_id=${category.id}&is_free=1">${category.name}免费</a></li>
                     </ul>
                 </div>
                 <div class="body">
@@ -69,7 +69,7 @@
                         <ul>
                             <c:forEach items="${recommend_novels_6_15}" var="novel">
                                 <li>
-                                    <span class="novel-name"><a href="/novel/detail/${novel.id}" target="_blank">${func:truncate(novel.name,9)}</a></span>
+                                    <span class="novel-name"><a href="/detail/${novel.id}" target="_blank">${func:truncate(novel.name,9)}</a></span>
                                     <span class="novel-author"><a href="#">${novel.author.pen_name}</a></span>
                                 </li>
                             </c:forEach>
@@ -83,13 +83,13 @@
                                 <c:forEach items="${recommend_novels_1_5}" var="novel">
                                     <li>
                                         <div class="novel-img">
-                                            <a href="/novel/detail/${novel.id}" target="_blank">
+                                            <a href="/detail/${novel.id}" target="_blank">
                                                 <img src="${novel.cover_url}" alt="">
                                             </a>
                                         </div>
                                         <div class="novel-info">
                                             <div class="novel-title">
-                                                <a href="/novel/detail/${novel.id}" target="_blank">${novel.name}</a>
+                                                <a href="/detail/${novel.id}" target="_blank">${novel.name}</a>
                                             </div>
                                             <div class="novel-profile">
                                                 ${func:profile_truncate(novel.profile,25)}
@@ -126,7 +126,7 @@
             <!-- 排行榜 -->
             <div class="rank">
                 <div class="rank-header">
-                    <h2>${category_cn_name}·排行榜</h2>
+                    <h2>${category_ch_name}·排行榜</h2>
                 </div>
                 <c:if test="${rank_novels != null}">
                     <ul>
@@ -137,7 +137,7 @@
                                             <a href="/detail/${rank_novels_1.id}" target="_blank">${rank_novels_1.name}</a>
                                         </span>
                                 <p class="novel-author">
-                                    <a href="#">${rank_novels_1.category.name}</a><i>·</i><a href="#">${rank_novels_1.author.pen_name}</a>
+                                    <a href="/${category_en_name}">${rank_novels_1.category.name}</a><i>·</i><a href="#">${rank_novels_1.author.pen_name}</a>
                                 </p>
                             </div>
                             <div class="novel-img-box">

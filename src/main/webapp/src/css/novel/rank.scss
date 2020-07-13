@@ -59,6 +59,21 @@
     }
 }
 
+body {
+    font-size: 16px;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a {
+    color: #333333;
+    text-decoration: none;
+    &:hover {
+        color: #dd0000;
+        text-decoration: none;
+    }
+}
 header {
     min-width: $pageWidth;
     .header-top {
@@ -96,6 +111,13 @@ header {
             .auth {
                 float: right;
                 line-height: 37px;
+                a {
+                    font-size: 14px;
+                    color: #777777;
+                    &:hover {
+                        color: #ff0000;
+                    }
+                }
             }
         }
     }

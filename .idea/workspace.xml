@@ -7,285 +7,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4106a39f-fea8-44e8-b63e-c187dcaffd2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/page/NovelPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/NovelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/NovelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/CategoryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/ChapterMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/ChapterMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/GroupMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/GroupMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/NovelMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/NovelMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/PermissionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/PermissionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/TagMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/TagMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/UserCollectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/UserCollectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/UserGroupMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/UserGroupMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/UserReadMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/UserReadMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Advertisement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Advertisement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Banner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Banner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Chapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Chapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Excellentworks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Excellentworks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Novel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Novel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Permission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/UserCollect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/UserCollect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/AdvertisementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/AdvertisementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/BannerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/BannerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/ChapterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/ChapterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/ExcellentworksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/ExcellentworksService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/NovelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/NovelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/AdvertisementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/AdvertisementServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/BannerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/BannerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/ChapterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/ChapterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/ExcellentworksServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/ExcellentworksServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/NovelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/NovelServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/util/Filters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/util/Filters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/util/Page.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/util/RESTful.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/util/RESTful.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/util/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/util/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/util/validate/UserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/validate/UserValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ChapterMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ChapterMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GroupMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/NovelMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/NovelMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PermissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TagMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TagMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserCollectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserCollectMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserGroupMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserReadMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserReadMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/func.tld" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/func.tld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/auth.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/base/auth.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/base/black_header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/base/black_header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/base/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/base/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/base/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/base/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/category.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/category.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/chapter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/chapter.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/base/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/whole.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/whole.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap-datepicker/tests/tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap-datepicker/tests/tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap-datepicker/tests/timezone.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap-datepicker/tests/timezone.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap/less/button-groups.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap/less/button-groups.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap/less/mixins/vendor-prefixes.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap/less/mixins/vendor-prefixes.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap/less/navbar.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap/less/navbar.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap/less/responsive-utilities.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap/less/responsive-utilities.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap/less/type.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap/less/type.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/bower_components/bootstrap/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/dist/css/AdminLTE.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/dist/css/AdminLTE.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/dist/css/alt/AdminLTE-without-plugins.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/adminLTE/dist/css/alt/AdminLTE-without-plugins.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/css/novel/index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/novel/index.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/css/novel/rank.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/novel/rank.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/account/chapter_list.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/account/chapter_list.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/account/collect.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/account/collect.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/account/novel_list.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/account/novel_list.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/account/pub_novel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/account/pub_novel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/account/write_chapter.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/account/write_chapter.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/auth.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/auth.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/banners.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/banners.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/chapter.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/chapter.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/ad_set.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/ad_set.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/category_list.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/category_list.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/chapter_list.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/chapter_list.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/edit_chapter.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/edit_chapter.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/edit_novel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/edit_novel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/excellent_works.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/excellent_works.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/novel_list.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/novel_list.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/staff.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/staff.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/tag_detail.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/cms/tag_detail.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/collect.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/collect.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/detail.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/detail.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/front_base.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/front_base.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/index.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/index.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/message.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/message.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/myajax.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/myajax.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/search.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/search.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/whole.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/whole.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/js/xfzalert.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/js/xfzalert.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/sweetalert/sweetalert.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/sweetalert/sweetalert.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/css/novel/whole.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/novel/whole.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/css/novel/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/css/novel/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/src/css/novel/rank.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/css/novel/rank.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/js/account/chapter_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/js/account/chapter_list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/js/account/collect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/js/account/collect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/js/account/pub_novel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/js/account/pub_novel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/js/account/write_chapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/js/account/write_chapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/js/banners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/js/banners.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/js/chapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/js/chapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/js/cms/ad_set.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/js/cms/ad_set.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/js/cms/edit_chapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/js/cms/edit_chapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/js/cms/edit_novel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/js/cms/edit_novel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/js/cms/novel_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/js/cms/novel_list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/js/cms/tag_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/js/cms/tag_detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/js/collect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/js/collect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/js/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/js/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/src/css/novel/whole.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/css/novel/whole.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/NovelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/NovelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/CategoryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/CategoryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/ChapterMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/ChapterMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/GroupMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/GroupMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/NovelMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/NovelMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/PermissionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/PermissionMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/TagMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/TagMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserCollectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserCollectMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserGroupMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserGroupMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserReadMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserReadMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Advertisement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Advertisement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Banner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Banner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Chapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Chapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Excellentworks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Excellentworks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Novel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Novel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Permission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Permission.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Tag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Tag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserCollect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserCollect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/AdvertisementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/AdvertisementService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/BannerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/BannerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/ChapterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/ChapterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/ExcellentworksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/ExcellentworksService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/NovelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/NovelService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/AdvertisementServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/AdvertisementServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/BannerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/BannerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/ChapterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/ChapterServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/ExcellentworksServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/ExcellentworksServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/NovelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/NovelServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/Filters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/util/Filters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/Page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/RESTful.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/util/RESTful.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/util/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/validate/UserValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ChapterMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ChapterMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/GroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/GroupMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/NovelMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/NovelMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/PermissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TagMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/TagMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserCollectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserCollectMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserGroupMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserReadMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserReadMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/Person.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/NovelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/NovelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/CategoryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/CategoryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/ChapterMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/ChapterMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/GroupMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/GroupMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/NovelMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/NovelMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/PermissionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/PermissionMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/TagMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/TagMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserCollectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserCollectMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserGroupMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserGroupMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserReadMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserReadMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Advertisement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Advertisement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Banner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Banner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Chapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Chapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Excellentworks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Excellentworks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Novel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Novel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Permission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Permission.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Tag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Tag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserCollect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserCollect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/AdvertisementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/AdvertisementService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/BannerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/BannerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/ChapterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/ChapterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/ExcellentworksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/ExcellentworksService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/NovelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/NovelService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/AdvertisementServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/AdvertisementServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/BannerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/BannerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/ChapterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/ChapterServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/ExcellentworksServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/ExcellentworksServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/NovelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/NovelServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/Filters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/Filters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/Page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/RESTful.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/RESTful.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/validate/UserValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/ChapterMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/ChapterMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/GroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/GroupMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/NovelMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/NovelMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/PermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/PermissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/TagMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/TagMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/UserCollectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/UserCollectMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/UserGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/UserGroupMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/UserReadMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/UserReadMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/springMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/func.tld" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/func.tld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/auth.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/base/black_header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/base/black_header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/base/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/base/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/base/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/base/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/category.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/category.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/chapter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/chapter.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/footer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/whole.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/novel/whole.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap-datepicker/tests/tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap-datepicker/tests/tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap-datepicker/tests/timezone.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap-datepicker/tests/timezone.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap/less/button-groups.less" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap/less/button-groups.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap/less/mixins/vendor-prefixes.less" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap/less/mixins/vendor-prefixes.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap/less/navbar.less" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap/less/navbar.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap/less/responsive-utilities.less" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap/less/responsive-utilities.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap/less/type.less" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap/less/type.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/bower_components/bootstrap/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/dist/css/AdminLTE.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/dist/css/AdminLTE.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/dist/css/alt/AdminLTE-without-plugins.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/adminLTE/dist/css/alt/AdminLTE-without-plugins.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/css/novel/index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/css/novel/index.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/css/novel/rank.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/css/novel/rank.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/account/chapter_list.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/account/chapter_list.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/account/collect.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/account/collect.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/account/novel_list.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/account/novel_list.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/account/pub_novel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/account/pub_novel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/account/write_chapter.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/account/write_chapter.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/auth.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/auth.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/banners.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/banners.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/chapter.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/chapter.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/ad_set.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/ad_set.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/category_list.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/category_list.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/chapter_list.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/chapter_list.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/edit_chapter.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/edit_chapter.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/edit_novel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/edit_novel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/excellent_works.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/excellent_works.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/novel_list.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/novel_list.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/staff.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/staff.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/tag_detail.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/cms/tag_detail.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/collect.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/collect.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/detail.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/detail.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/front_base.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/front_base.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/index.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/index.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/message.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/message.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/myajax.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/myajax.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/search.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/search.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/whole.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/whole.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/js/xfzalert.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/js/xfzalert.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/sweetalert/sweetalert.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/sweetalert/sweetalert.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/css/novel/whole.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/css/novel/whole.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/css/novel/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/css/novel/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/css/novel/rank.scss" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/css/novel/rank.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/js/account/chapter_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/js/account/chapter_list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/js/account/collect.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/js/account/collect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/js/account/pub_novel.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/js/account/pub_novel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/js/account/write_chapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/js/account/write_chapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/js/banners.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/js/banners.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/js/chapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/js/chapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/js/cms/ad_set.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/js/cms/ad_set.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/js/cms/edit_chapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/js/cms/edit_chapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/js/cms/edit_novel.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/js/cms/edit_novel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/js/cms/novel_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/js/cms/novel_list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/js/cms/tag_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/js/cms/tag_detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/js/collect.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/js/collect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/js/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/js/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/css/novel/whole.scss" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/css/novel/whole.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -313,180 +61,129 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/controller/CMSController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="123" column="62" lean-forward="true" selection-start-line="123" selection-start-column="62" selection-end-line="123" selection-end-column="62" />
+            <state relative-caret-position="-2339">
+              <caret line="117" column="60" selection-start-line="117" selection-start-column="60" selection-end-line="117" selection-end-column="60" />
               <folding>
+                <element signature="e#1006#1017#0" />
                 <element signature="e#1678#1950#0" />
                 <element signature="e#1956#2638#0" />
                 <element signature="e#2644#2898#0" />
+                <element signature="e#2904#3018#0" />
                 <element signature="e#2904#3390#0" />
+                <element signature="e#3397#3511#0" />
                 <element signature="e#3397#3975#0" />
+                <element signature="e#3981#4634#0" />
                 <element signature="e#4640#4977#0" />
+                <element signature="e#4983#5099#0" />
                 <element signature="e#4983#5964#0" />
+                <element signature="e#5970#6086#0" />
                 <element signature="e#5970#6730#0" />
+                <element signature="e#6736#6851#0" />
                 <element signature="e#6736#7369#0" />
+                <element signature="e#7375#7493#0" />
                 <element signature="e#7375#8016#0" />
+                <element signature="e#8037#8152#0" />
                 <element signature="e#8022#8437#0" />
+                <element signature="class#8321:8429" />
+                <element signature="initializer##0;class#8321:8429" />
+                <element signature="e#8455#8568#0" />
                 <element signature="e#8443#10196#0" />
+                <element signature="e#9107#9207#0" />
                 <element signature="e#10215#10459#0" />
+                <element signature="e#10465#10585#0" />
                 <element signature="e#10465#11172#0" />
+                <element signature="e#11178#11299#0" />
                 <element signature="e#11178#11584#0" />
+                <element signature="e#11590#11713#0" />
+                <element signature="e#11590#11929#0" />
                 <element signature="e#11935#12336#0" />
                 <element signature="e#12342#12593#0" />
+                <element signature="e#12599#12680#0" />
                 <element signature="e#12599#13057#0" />
+                <element signature="e#13063#13172#0" />
                 <element signature="e#13063#13663#0" />
+                <element signature="e#13669#13779#0" />
                 <element signature="e#13669#14468#0" />
+                <element signature="e#14474#14586#0" />
                 <element signature="e#14474#14850#0" />
+                <element signature="e#14856#14965#0" />
                 <element signature="e#14856#15265#0" />
+                <element signature="e#15383#15467#0" />
                 <element signature="e#15383#15703#0" />
+                <element signature="e#15709#15821#0" />
                 <element signature="e#15709#16197#0" />
+                <element signature="e#16203#16316#0" />
                 <element signature="e#16203#16595#0" />
+                <element signature="e#16601#16716#0" />
                 <element signature="e#16601#17053#0" />
                 <element signature="e#17059#17285#0" />
+                <element signature="e#17291#17399#0" />
                 <element signature="e#17291#17798#0" />
+                <element signature="e#17804#17913#0" />
+                <element signature="e#17804#18316#0" />
+                <element signature="e#18322#18402#0" />
                 <element signature="e#18322#18643#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/controller/NovelController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
-              <folding>
-                <element signature="e#559#570#0" />
-                <element signature="method#index#0;class#NovelController#0" />
-                <element signature="method#detail#0;class#NovelController#0" />
-                <element signature="method#chapter#0;class#NovelController#0" />
-                <element signature="method#whole#0;class#NovelController#0" />
-                <element signature="method#category#0;class#NovelController#0" />
-                <element signature="e#5383#5437#0" />
+                <element signature="e#18664#18945#0" />
+                <element signature="e#18951#19073#0" />
+                <element signature="e#18951#19400#0" />
+                <element signature="e#19406#19616#0" />
+                <element signature="e#19621#19924#0" />
+                <element signature="e#19930#20696#0" />
+                <element signature="e#20702#21228#0" />
+                <element signature="e#21234#21348#0" />
+                <element signature="e#21234#21747#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/controller/NovelController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-99">
+              <caret line="228" column="34" lean-forward="true" selection-start-line="228" selection-start-column="34" selection-end-line="228" selection-end-column="34" />
+              <folding>
+                <element signature="e#559#570#0" />
+                <element signature="method#index#0;class#NovelController#0" />
+                <element signature="method#detail#0;class#NovelController#0" />
+                <element signature="method#chapter#0;class#NovelController#0" />
+                <element signature="method#whole#0;class#NovelController#0" />
+                <element signature="method#rank#0;class#NovelController#0" />
+                <element signature="method#http404#0;class#NovelController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state relative-caret-position="46">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/rank.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/category.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="113" column="54" selection-start-line="113" selection-start-column="54" selection-end-line="113" selection-end-column="54" />
+            <state relative-caret-position="83">
+              <caret line="127" column="41" lean-forward="true" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
               <folding>
-                <element signature="n#style#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
-                <element signature="n#li#1;n#ul#0;n#nav#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="e#7760#7764#1#HTML" expanded="true" />
-                <element signature="e#8162#8166#1#HTML" expanded="true" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#c:forEach#3;n#jsp:root#0;n#!!top" />
+                <element signature="n#c:if#1;n#jsp:root#0;n#!!top" />
+                <element signature="n#c:forEach#0;n#c:if#1;n#jsp:root#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/src/css/novel/rank.scss">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/base/black_header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="366" column="50" selection-start-line="366" selection-start-column="50" selection-end-line="366" selection-end-column="50" />
-              <folding>
-                <element signature="e#81#268#0" />
-                <element signature="e#293#1395#0" />
-                <element signature="e#1404#7197#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/dist/css/novel/rank.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret column="5752" selection-start-column="5752" selection-end-column="5752" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/whole.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-              <folding>
-                <element signature="n#style#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
-                <element signature="n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#ul#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#li#1;n#ul#0;n#nav#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="e#8555#8559#1#HTML" expanded="true" />
-                <element signature="e#8957#8961#1#HTML" expanded="true" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/page/RankPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#setCategory_id#0;class#WholePage#0" />
-                <element signature="method#getCriteria#0;class#WholePage#0" />
-                <element signature="method#getParams#0;class#WholePage#0" />
-                <element signature="method#getUrlQuery#0;class#WholePage#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/page/WholePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="86" column="41" selection-end-line="158" />
-              <folding>
-                <element signature="method#NovelPage#0;class#WholePage#0" />
-                <element signature="method#setCategory_id#0;class#WholePage#0" />
-                <element signature="method#setIs_free#0;class#WholePage#0" />
-                <element signature="method#setIs_complete#0;class#WholePage#0" />
-                <element signature="method#setSort#0;class#WholePage#0" />
-                <element signature="method#getCriteria#0;class#WholePage#0" />
-                <element signature="method#getParams#0;class#WholePage#0" />
-                <element signature="class#2160:2354" />
-                <element signature="initializer##0;class#2160:2354" />
-                <element signature="method#getUrlQuery#0;class#WholePage#0" />
-                <element signature="method#getQuery_strings#0;class#WholePage#0" />
-                <element signature="method#generateUrlQuery#0;class#WholePage#0" />
-                <element signature="method#main#0;class#WholePage#0" />
-                <element signature="class#4438:4571" />
-                <element signature="initializer##0;class#4438:4571" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/page/Page.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="13" />
+            <state relative-caret-position="89">
+              <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -500,16 +197,12 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fmt</find>
-      <find>categories</find>
-      <find>build</find>
-      <find>date</find>
-      <find>pub</find>
       <find>number</find>
       <find>id=&quot;number</find>
       <find>account</find>
@@ -532,9 +225,14 @@
       <find>page_query</find>
       <find>?page</find>
       <find>profile</find>
-      <find>page</find>
+      <find>main</find>
       <find>author-name</find>
       <find>whole</find>
+      <find>content-wrapper</find>
+      <find>input-group</find>
+      <find>nav-number</find>
+      <find>novel/</find>
+      <find>page</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -543,13 +241,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/AdvertisementServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cms/ad_set.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/src/js/cms/ad_set.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykjzone/service/ExcellentworksService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/ExcellentworksServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cms/excellent_works.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Excellentworks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykjzone/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cms/add_staff.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/UserGroupMapper.java" />
@@ -584,16 +275,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/NovelServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/category.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/base/black_header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/base/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykjzone/page/WholePage.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/whole.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykjzone/page/RankPage.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/src/css/novel/rank.scss" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/rank.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/NovelController.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/src/css/error/404.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error/404.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/src/css/error/404.scss" />
+        <option value="$PROJECT_DIR$/src/main/webapp/src/css/novel/whole.scss" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/whole.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/src/css/novel/rank.scss" />
+        <option value="$PROJECT_DIR$/src/main/webapp/src/css/novel/index.scss" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/chapter.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/category.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/NovelController.java" />
       </list>
     </option>
   </component>
@@ -719,6 +417,110 @@
             <path>
               <item name="xiaoshuo_SSM" type="b2602c69:ProjectViewProjectNode" />
               <item name="xiaoshuo_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiaoshuo_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiaoshuo_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiaoshuo_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiaoshuo_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiaoshuo_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiaoshuo_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiaoshuo_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiaoshuo_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiaoshuo_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiaoshuo_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiaoshuo_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiaoshuo_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="error" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiaoshuo_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiaoshuo_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="novel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiaoshuo_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiaoshuo_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiaoshuo_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiaoshuo_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiaoshuo_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiaoshuo_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="error" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiaoshuo_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiaoshuo_SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="novel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiaoshuo_SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xiaoshuo_SSM" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -739,8 +541,9 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/IdeaProjects/xiaoshuo_SSM/src/main/webapp/src/js/account/pub_novel.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594613161363" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594625207571" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tmall_SSM" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -957,18 +760,18 @@
       <workItem from="1593748313238" duration="10806000" />
       <workItem from="1593834401763" duration="27647000" />
       <workItem from="1593924696992" duration="69915000" />
-      <workItem from="1594272158805" duration="88301000" />
+      <workItem from="1594272158805" duration="96140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="347085000" />
+    <option name="totallyTimeSpent" value="354924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="750" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2753404" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2753404" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -979,7 +782,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32263514" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3445946" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45777026" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.16047297" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1014,94 +817,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/GroupMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserPermissionsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/cms/aside.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="42" column="44" lean-forward="true" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-          <folding>
-            <element signature="n#c:if#0;n#jsp:root#0;n#!!top" />
-            <element signature="n#c:if#1;n#jsp:root#0;n#!!top" />
-            <element signature="n#c:if#1;n#jsp:root#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/GroupMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
-          <folding>
-            <element signature="n#resultMap#0;n#mapper#0;n#!!top" />
-            <element signature="n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#when#0;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#when#1;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#when#2;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#when#3;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#foreach#0;n#when#3;n#choose#0;n#foreach#0;n#trim#0;n#if#0;n#foreach#0;n#where#0;n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#sql#1;n#mapper#0;n#!!top" />
-            <element signature="n#select#0;n#mapper#0;n#!!top" />
-            <element signature="n#if#0;n#select#0;n#mapper#0;n#!!top" />
-            <element signature="n#if#1;n#select#0;n#mapper#0;n#!!top" />
-            <element signature="n#if#2;n#select#0;n#mapper#0;n#!!top" />
-            <element signature="n#select#1;n#mapper#0;n#!!top" />
-            <element signature="n#delete#0;n#mapper#0;n#!!top" />
-            <element signature="n#insert#0;n#mapper#0;n#!!top" />
-            <element signature="n#insert#1;n#mapper#0;n#!!top" />
-            <element signature="n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
-            <element signature="n#if#0;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
-            <element signature="n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
-            <element signature="n#if#0;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" />
-            <element signature="n#set#0;n#update#0;n#mapper#0;n#!!top" />
-            <element signature="n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
-            <element signature="n#update#1;n#mapper#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/GroupServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/service/PermissionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/PermissionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/PermissionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -1274,13 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/chapter.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="49" lean-forward="true" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/account/base.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1356,32 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/category.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="214" column="24" lean-forward="true" selection-start-line="214" selection-start-column="24" selection-end-line="214" selection-end-column="24" />
-          <folding>
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#c:forEach#3;n#jsp:root#0;n#!!top" />
-            <element signature="n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#c:forEach#0;n#c:if#1;n#jsp:root#0;n#!!top" />
-            <element signature="n#div#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/base/black_header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1491,37 +1173,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/page/ChapterPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/NovelExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="437" column="24" selection-start-line="437" selection-start-column="24" selection-end-line="437" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/page/NovelPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="100" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="100" />
-          <folding>
-            <element signature="docComment;class#NovelPage#0" />
-            <element signature="method#NovelPage#0;class#NovelPage#0" />
-            <element signature="method#setStart_date#0;class#NovelPage#0" />
-            <element signature="method#setEnd_date#0;class#NovelPage#0" />
-            <element signature="method#setName#0;class#NovelPage#0" />
-            <element signature="method#setCategory_id#0;class#NovelPage#0" />
-            <element signature="method#getCriteria#0;class#NovelPage#0" />
-            <element signature="method#getParams#0;class#NovelPage#0" />
-            <element signature="class#1862:2056" />
-            <element signature="initializer##0;class#1862:2056" />
-            <element signature="method#getUrlQuery#0;class#NovelPage#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1539,16 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding>
-            <element signature="n#div#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1616,59 +1261,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/controller/CMSController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/page/ChapterPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="123" column="62" lean-forward="true" selection-start-line="123" selection-start-column="62" selection-end-line="123" selection-end-column="62" />
-          <folding>
-            <element signature="e#1678#1950#0" />
-            <element signature="e#1956#2638#0" />
-            <element signature="e#2644#2898#0" />
-            <element signature="e#2904#3390#0" />
-            <element signature="e#3397#3975#0" />
-            <element signature="e#4640#4977#0" />
-            <element signature="e#4983#5964#0" />
-            <element signature="e#5970#6730#0" />
-            <element signature="e#6736#7369#0" />
-            <element signature="e#7375#8016#0" />
-            <element signature="e#8022#8437#0" />
-            <element signature="e#8443#10196#0" />
-            <element signature="e#10215#10459#0" />
-            <element signature="e#10465#11172#0" />
-            <element signature="e#11178#11584#0" />
-            <element signature="e#11935#12336#0" />
-            <element signature="e#12342#12593#0" />
-            <element signature="e#12599#13057#0" />
-            <element signature="e#13063#13663#0" />
-            <element signature="e#13669#14468#0" />
-            <element signature="e#14474#14850#0" />
-            <element signature="e#14856#15265#0" />
-            <element signature="e#15383#15703#0" />
-            <element signature="e#15709#16197#0" />
-            <element signature="e#16203#16595#0" />
-            <element signature="e#16601#17053#0" />
-            <element signature="e#17059#17285#0" />
-            <element signature="e#17291#17798#0" />
-            <element signature="e#18322#18643#0" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/whole.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/page/NovelPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+        <state relative-caret-position="490">
+          <caret line="100" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="100" />
           <folding>
-            <element signature="n#style#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
-            <element signature="n#ul#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#ul#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#li#1;n#ul#0;n#nav#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="e#8555#8559#1#HTML" expanded="true" />
-            <element signature="e#8957#8961#1#HTML" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="docComment;class#NovelPage#0" />
+            <element signature="method#NovelPage#0;class#NovelPage#0" />
+            <element signature="method#setStart_date#0;class#NovelPage#0" />
+            <element signature="method#setEnd_date#0;class#NovelPage#0" />
+            <element signature="method#setName#0;class#NovelPage#0" />
+            <element signature="method#setCategory_id#0;class#NovelPage#0" />
+            <element signature="method#getCriteria#0;class#NovelPage#0" />
+            <element signature="method#getParams#0;class#NovelPage#0" />
+            <element signature="class#1862:2056" />
+            <element signature="initializer##0;class#1862:2056" />
+            <element signature="method#getUrlQuery#0;class#NovelPage#0" />
           </folding>
         </state>
       </provider>
@@ -1680,24 +1295,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/css/novel/rank.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="366" column="50" selection-start-line="366" selection-start-column="50" selection-end-line="366" selection-end-column="50" />
-          <folding>
-            <element signature="e#81#268#0" />
-            <element signature="e#293#1395#0" />
-            <element signature="e#1404#7197#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/rank.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="113" column="54" selection-start-line="113" selection-start-column="54" selection-end-line="113" selection-end-column="54" />
+        <state relative-caret-position="96">
+          <caret line="12" column="68" lean-forward="true" selection-start-line="12" selection-start-column="68" selection-end-line="13" selection-end-column="59" />
           <folding>
             <element signature="n#style#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
             <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
             <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
@@ -1709,26 +1313,235 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/maven/repository/com/github/pagehelper/pagehelper/5.1.2-beta/pagehelper-5.1.2-beta.jar!/com/github/pagehelper/page/PageMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+          <folding>
+            <element signature="e#2225#2226#0" expanded="true" />
+            <element signature="e#2279#2280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error/404.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/css/error/404.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="266" column="20" selection-start-line="266" selection-start-column="20" selection-end-line="266" selection-end-column="20" />
+          <folding>
+            <element signature="e#81#268#0" />
+            <element signature="e#293#1395#0" />
+            <element signature="e#1404#7197#0" />
+            <element signature="e#12656#12830#0" />
+            <element signature="e#12846#13051#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/whole.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#!!top" />
+            <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/css/novel/whole.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="112" column="34" lean-forward="true" selection-start-line="112" selection-start-column="34" selection-end-line="119" selection-end-column="17" />
+          <folding>
+            <element signature="e#81#268#0" />
+            <element signature="e#293#1395#0" />
+            <element signature="e#2565#4668#0" />
+            <element signature="e#4688#7195#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/css/novel/rank.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+          <folding>
+            <element signature="e#81#268#0" />
+            <element signature="e#293#1395#0" />
+            <element signature="e#7204#12838#0" />
+            <element signature="e#12846#13051#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/css/novel/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="647" column="58" lean-forward="true" selection-start-line="647" selection-start-column="58" selection-end-line="647" selection-end-column="58" />
+          <folding>
+            <element signature="e#81#268#0" />
+            <element signature="e#293#1396#0" />
+            <element signature="e#543#801#0" />
+            <element signature="e#830#1052#0" />
+            <element signature="e#1083#1378#0" />
+            <element signature="e#1450#2749#0" />
+            <element signature="e#2769#5072#0" />
+            <element signature="e#5092#7599#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/css/novel/index_category.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/base/black_header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/chapter.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1958">
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/category.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="127" column="41" lean-forward="true" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#c:forEach#3;n#jsp:root#0;n#!!top" />
+            <element signature="n#c:if#1;n#jsp:root#0;n#!!top" />
+            <element signature="n#c:forEach#0;n#c:if#1;n#jsp:root#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/controller/CMSController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2339">
+          <caret line="117" column="60" selection-start-line="117" selection-start-column="60" selection-end-line="117" selection-end-column="60" />
+          <folding>
+            <element signature="e#1006#1017#0" />
+            <element signature="e#1678#1950#0" />
+            <element signature="e#1956#2638#0" />
+            <element signature="e#2644#2898#0" />
+            <element signature="e#2904#3018#0" />
+            <element signature="e#2904#3390#0" />
+            <element signature="e#3397#3511#0" />
+            <element signature="e#3397#3975#0" />
+            <element signature="e#3981#4634#0" />
+            <element signature="e#4640#4977#0" />
+            <element signature="e#4983#5099#0" />
+            <element signature="e#4983#5964#0" />
+            <element signature="e#5970#6086#0" />
+            <element signature="e#5970#6730#0" />
+            <element signature="e#6736#6851#0" />
+            <element signature="e#6736#7369#0" />
+            <element signature="e#7375#7493#0" />
+            <element signature="e#7375#8016#0" />
+            <element signature="e#8037#8152#0" />
+            <element signature="e#8022#8437#0" />
+            <element signature="class#8321:8429" />
+            <element signature="initializer##0;class#8321:8429" />
+            <element signature="e#8455#8568#0" />
+            <element signature="e#8443#10196#0" />
+            <element signature="e#9107#9207#0" />
+            <element signature="e#10215#10459#0" />
+            <element signature="e#10465#10585#0" />
+            <element signature="e#10465#11172#0" />
+            <element signature="e#11178#11299#0" />
+            <element signature="e#11178#11584#0" />
+            <element signature="e#11590#11713#0" />
+            <element signature="e#11590#11929#0" />
+            <element signature="e#11935#12336#0" />
+            <element signature="e#12342#12593#0" />
+            <element signature="e#12599#12680#0" />
+            <element signature="e#12599#13057#0" />
+            <element signature="e#13063#13172#0" />
+            <element signature="e#13063#13663#0" />
+            <element signature="e#13669#13779#0" />
+            <element signature="e#13669#14468#0" />
+            <element signature="e#14474#14586#0" />
+            <element signature="e#14474#14850#0" />
+            <element signature="e#14856#14965#0" />
+            <element signature="e#14856#15265#0" />
+            <element signature="e#15383#15467#0" />
+            <element signature="e#15383#15703#0" />
+            <element signature="e#15709#15821#0" />
+            <element signature="e#15709#16197#0" />
+            <element signature="e#16203#16316#0" />
+            <element signature="e#16203#16595#0" />
+            <element signature="e#16601#16716#0" />
+            <element signature="e#16601#17053#0" />
+            <element signature="e#17059#17285#0" />
+            <element signature="e#17291#17399#0" />
+            <element signature="e#17291#17798#0" />
+            <element signature="e#17804#17913#0" />
+            <element signature="e#17804#18316#0" />
+            <element signature="e#18322#18402#0" />
+            <element signature="e#18322#18643#0" />
+            <element signature="e#18664#18945#0" />
+            <element signature="e#18951#19073#0" />
+            <element signature="e#18951#19400#0" />
+            <element signature="e#19406#19616#0" />
+            <element signature="e#19621#19924#0" />
+            <element signature="e#19930#20696#0" />
+            <element signature="e#20702#21228#0" />
+            <element signature="e#21234#21348#0" />
+            <element signature="e#21234#21747#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ykjzone/controller/NovelController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
+        <state relative-caret-position="-99">
+          <caret line="228" column="34" lean-forward="true" selection-start-line="228" selection-start-column="34" selection-end-line="228" selection-end-column="34" />
           <folding>
             <element signature="e#559#570#0" />
             <element signature="method#index#0;class#NovelController#0" />
             <element signature="method#detail#0;class#NovelController#0" />
             <element signature="method#chapter#0;class#NovelController#0" />
             <element signature="method#whole#0;class#NovelController#0" />
-            <element signature="method#category#0;class#NovelController#0" />
-            <element signature="e#5383#5437#0" />
+            <element signature="method#rank#0;class#NovelController#0" />
+            <element signature="method#http404#0;class#NovelController#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>

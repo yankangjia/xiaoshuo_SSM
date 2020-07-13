@@ -42,7 +42,7 @@
                         request.setAttribute("all_category_name_1_8",all_category_name_1_8);
                     %>
                     <c:forEach items="${all_category_name_1_8}" var="category" varStatus="st">
-                        <a target="_blank" href="/index_category/${category[0]}">${category[1]}</a>
+                        <a target="_blank" href="/${category[0]}">${category[1]}</a>
                     </c:forEach>
                 </div>
             </li>
