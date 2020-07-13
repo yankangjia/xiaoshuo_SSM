@@ -1,27 +1,29 @@
 package com.ykjzone.controller;
 
+import com.ykjzone.pojo.Group;
+import com.ykjzone.pojo.Permission;
 import com.ykjzone.pojo.User;
+import com.ykjzone.service.GroupService;
+import com.ykjzone.service.PermissionService;
 import com.ykjzone.service.UserService;
 import com.ykjzone.util.ImageCaptcha;
 import com.ykjzone.util.RESTful;
 import com.ykjzone.util.Redis;
-import com.ykjzone.util.validate.UserValidator;
+import com.ykjzone.validate.UserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.HttpRequestHandler;
 import org.springframework.web.bind.annotation.*;
 import redis.clients.jedis.Jedis;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.awt.*;
 import java.io.IOException;
-import java.util.Date;
+import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Random;
-import java.util.regex.Pattern;
 
 /**
  * 用户管理控制器
@@ -31,25 +33,60 @@ import java.util.regex.Pattern;
 public class AuthController {
     @Autowired
     UserService userService;
+    @Autowired
+    GroupService groupService;
+    @Autowired
+    PermissionService permissionService;
 
-    @RequestMapping(value = "/register", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
-    @ResponseBody
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
     public void register(HttpServletRequest request, HttpServletResponse response){
-        String telephone = (String) request.getParameter("telephone");
-        System.out.println(telephone);
-        UserValidator userValidator = new UserValidator(request);
+        try {
+            request.setCharacterEncoding("UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        UserValidator userValidator = new UserValidator(request, userService);
+        response.setContentType("application/json; charset=UTF-8");
         try {
             if(userValidator.clean()){
-                userValidator.save();
+                User user = (User) userValidator.save();
+                request.getSession().setAttribute("user",user);
                 response.getWriter().write(RESTful.ok());
             } else{
                 String message = userValidator.getMessage();
-                    response.getWriter().write(RESTful.params_error(message,null));
+                response.getWriter().write(RESTful.params_error(message,null));
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
+    @ResponseBody
+    public String login(String telephone, String password, String remember, HttpSession session){
+        User user = userService.getByTelephoneAndPassword(telephone, password);
+        if(user == null)
+            return RESTful.unauth("手机号或密码错误");
+        if(user.getIs_active() == false)
+            return RESTful.unauth("您的账号被冻结了");
+        List<Group> groups = groupService.getByUserId(user.getId());
+        user.setGroups(groups);
+        List<Permission> permissions = permissionService.getByUserId(user.getId());
+        user.setPermissions(permissions);
+
+        session.setAttribute("user", user);
+        if("1".equals(remember)) session.setMaxInactiveInterval(60*60*24*7*2);
+        else session.setMaxInactiveInterval(0);
+        return RESTful.ok();
+    }
+
+    @RequestMapping("/logout")
+    public String logout(HttpSession session){
+        session.invalidate();
+        return "redirect:/";
+    }
+
+
 
     @RequestMapping("/img_captcha")
     public void imgCaptcha(HttpServletRequest request, HttpServletResponse response)
@@ -84,7 +121,7 @@ public class AuthController {
         jedis.expire(telephone, 5 * 60);
         // 给手机发送验证码，此步骤省略
         // 返回
-        Map<String,String> data = new HashMap<>();
+        Map<String,Object> data = new HashMap<>();
         data.put("code", captcha);
         return RESTful.result(200,"",data);
     }

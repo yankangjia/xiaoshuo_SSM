@@ -31,15 +31,15 @@
             request.setAttribute("all_category_name_7_12",all_category_name_7_12);
         %>
         <c:forEach items="${all_category_name_1_6}" var="cate" varStatus="st">
-            <li><a href="/novel/index_category/${cate[0]}">${cate[1]}</a></li>
+            <li><a href="/${cate[0]}">${cate[1]}</a></li>
         </c:forEach>
 
         <li>
             <a href="#">更多</a>
             <div class="dropdown">
-                <a href="/novel/whole/">全部作品</a>
+                <a href="/whole/">全部作品</a>
                 <c:forEach items="${all_category_name_7_12}" var="cate" varStatus="st">
-                    <a href="/novel/index_category/${cate[0]}">${cate[1]}</a>
+                    <a href="/${cate[0]}">${cate[1]}</a>
                 </c:forEach>
             </div>
         </li>
@@ -51,14 +51,14 @@
         </a>
     </div>
     <div class="auth-group">
-        <c:if test="${user.is_authenticated == true}">
-            <a href="/account/index/">${request.user.username}</a>
-            <c:if test="${user.is_authenticated == true}">
+        <c:if test="${user != null}">
+            <a href="/account/index/">${user.username}</a>
+            <c:if test="${user.is_staff == true}">
                 <a href="/cms/index/">后台管理</a>
             </c:if>
             <a href="/xsauth/logout/">退出</a>
         </c:if>
-        <c:if test="${user.is_authenticated == false}">
+        <c:if test="${user == null}">
             <a href="javascript:void(0);" class="sign-in">登录</a>
             <a href="javascript:void(0);" class="sign-up">注册</a>
         </c:if>

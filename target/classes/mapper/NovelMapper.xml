@@ -128,17 +128,50 @@
       order by ${orderByClause}
     </if>
   </select>
+  <select id="selectReadedNovelsByUserId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    distinct
+    <include refid="Base_Column_List" />
+    from novel n, novel_category c, novel_tag t, xsauth_user u, xsauth_user_read uread
+    <if test="is_collect">
+      , xsauth_user_collect ucollect
+    </if>
+    where n.category_id = c.id and n.tag_id = t.id and n.author_id = u.id and uread.novel_id = n.id
+    <if test="is_collect">
+      and n.id = ucollect.novel_id
+    </if>
+    and uread.user_id = #{user_id}
+    order by uread.id desc
+  </select>
+  <select id="selectCollectByUserId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    distinct
+    <include refid="Base_Column_List" />
+    from novel n, novel_category c, novel_tag t, xsauth_user u, xsauth_user_collect ucollect
+    where n.category_id = c.id and n.tag_id = t.id and n.author_id = u.id and ucollect.novel_id = n.id
+    and ucollect.user_id = #{user_id}
+    order by ucollect.id desc
+  </select>
+  <select id="selectWorksByUserId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    distinct
+    <include refid="Base_Column_List" />
+    from novel n, novel_category c, novel_tag t, xsauth_user u, xsauth_user_collect ucollect
+    where n.category_id = c.id and n.tag_id = t.id and n.author_id = u.id
+    and n.author_id = #{user_id}
+    order by n.pub_date desc
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     delete from novel
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.ykjzone.pojo.Novel" useGeneratedKeys="true">
-    insert into novel (name, chapters_num, words_num, 
+  <insert id="insert" parameterType="com.ykjzone.pojo.Novel" >
+    insert into novel (id, name, chapters_num, words_num,
       pub_date, price, author_id, 
       category_id, cover_url, is_complete, 
       is_recommend, views, tag_id, 
       profile)
-    values (#{name,jdbcType=VARCHAR}, #{chapters_num,jdbcType=INTEGER}, #{words_num,jdbcType=INTEGER}, 
+    values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{chapters_num,jdbcType=INTEGER}, #{words_num,jdbcType=INTEGER},
       #{pub_date,jdbcType=TIMESTAMP}, #{price,jdbcType=DOUBLE}, #{author_id,jdbcType=VARCHAR}, 
       #{category_id,jdbcType=INTEGER}, #{cover_url,jdbcType=VARCHAR}, #{is_complete,jdbcType=BIT}, 
       #{is_recommend,jdbcType=BIT}, #{views,jdbcType=INTEGER}, #{tag_id,jdbcType=INTEGER}, 
@@ -277,16 +310,9 @@
   <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.ykjzone.pojo.Novel">
     update novel
     set name = #{name,jdbcType=VARCHAR},
-      chapters_num = #{chapters_num,jdbcType=INTEGER},
-      words_num = #{words_num,jdbcType=INTEGER},
-      pub_date = #{pub_date,jdbcType=TIMESTAMP},
       price = #{price,jdbcType=DOUBLE},
-      author_id = #{author_id,jdbcType=VARCHAR},
       category_id = #{category_id,jdbcType=INTEGER},
       cover_url = #{cover_url,jdbcType=VARCHAR},
-      is_complete = #{is_complete,jdbcType=BIT},
-      is_recommend = #{is_recommend,jdbcType=BIT},
-      views = #{views,jdbcType=INTEGER},
       tag_id = #{tag_id,jdbcType=INTEGER},
       profile = #{profile,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=VARCHAR}

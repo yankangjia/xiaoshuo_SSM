@@ -1,0 +1,7 @@
+src/main/webapp/node_modules
+
+target/xiaoshuo/node_modules
+
+src/test
+
+target/xiaoshuo/media

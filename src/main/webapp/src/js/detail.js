@@ -64,7 +64,7 @@ Detail.prototype.listenCollectNovelEvent = function(){
         var self = $(this);
         var novelId = $(this).attr('data-novel-id');
         myajax.post({
-            'url': '/novel/collect/',
+            'url': '/account/collect/',
             'data': {
                 'novel_id': novelId
             },

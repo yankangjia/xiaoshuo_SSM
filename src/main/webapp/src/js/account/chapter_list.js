@@ -22,16 +22,17 @@ ChapterList.prototype.initDatePicker = function(){
     startPicker.datepicker(options);
     endPicker.datepicker(options);
 };
+
 // 监听删除章节事件
 ChapterList.prototype.listenDeleteChapterEvent = function(){
     var deleteBtn = $('.delete-btn');
     deleteBtn.click(function(){
         var chapterId = $(this).attr('data-chapter-id');
         xfzalert.alertConfirm({
-            'text': '您确定要删除这篇新闻吗？',
+            'text': '您确定要删除这一章节吗？',
             'confirmCallback': function(){
                 myajax.post({
-                    'url': '/account/delete_chapter/',
+                    'url': '/cms/delete_chapter/',
                     'data': {
                         'chapter_id': chapterId
                     },

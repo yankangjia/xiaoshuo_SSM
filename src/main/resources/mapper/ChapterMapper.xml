@@ -62,12 +62,15 @@
       </foreach>
     </where>
   </sql>
-  <sql id="Base_Column_List">
+  <sql id="Detail_Column_List">
     ch.id, title, number, ch.words_num, novel_id, ch.pub_date,
     n.id nid, n.name nname, n.chapters_num, n.pub_date n_pub_date, cover_url, n.words_num n_words_num,
     ca.id caid, ca.name caname,
     t.id tid, t.name tname,
     u.id uid, u.username uname, pen_name
+  </sql>
+  <sql id="Base_Column_List">
+    id, title, number, words_num, novel_id, pub_date
   </sql>
   <sql id="Blob_Column_List">
     content
@@ -78,7 +81,7 @@
       distinct
     </if>
     'false' as QUERYID,
-    <include refid="Base_Column_List" />
+    <include refid="Detail_Column_List" />
     ,
     <include refid="Blob_Column_List" />
     from novel_chapter
@@ -91,10 +94,6 @@
   </select>
   <select id="selectByExample" parameterType="com.ykjzone.pojo.ChapterExample" resultMap="BaseResultMap">
     select
-    <if test="distinct">
-      distinct
-    </if>
-    'false' as QUERYID,
     <include refid="Base_Column_List" />
     from novel_chapter
     <if test="_parameter != null">
@@ -106,7 +105,7 @@
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
     select 
-    <include refid="Base_Column_List" />
+    <include refid="Detail_Column_List" />
     ,
     <include refid="Blob_Column_List" />
     from novel_chapter ch, novel n, novel_category ca, novel_tag t, xsauth_user u
@@ -114,7 +113,7 @@
   </select>
   <select id="selectChaptersByNovelId" parameterType="java.lang.String"
  resultType="Chapter">
-    select * from novel_chapter where novel_id =  #{id,jdbcType=VARCHAR} order by pub_date desc
+    select * from novel_chapter where novel_id =  #{id,jdbcType=VARCHAR} order by number desc
   </select>
   <select id="selectIdByNovelAndNum" resultType="java.lang.String">
     select id from novel_chapter where novel_id = #{novel_id} and number = #{number}
@@ -123,11 +122,13 @@
     delete from novel_chapter
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.ykjzone.pojo.Chapter" useGeneratedKeys="true">
-    insert into novel_chapter (title, number, words_num, 
-      novel_id, pub_date, content
-      )
-    values (#{title,jdbcType=VARCHAR}, #{number,jdbcType=INTEGER}, #{words_num,jdbcType=INTEGER}, 
+  <delete id="deleteByNovelId" parameterType="java.lang.String">
+    delete from novel_chapter
+    where novel_id = #{novel_id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.ykjzone.pojo.Chapter">
+    insert into novel_chapter (id, title, number, words_num,novel_id, pub_date, content)
+    values (#{id,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, #{number,jdbcType=INTEGER}, #{words_num,jdbcType=INTEGER},
       #{novel_id,jdbcType=VARCHAR}, #{pub_date,jdbcType=TIMESTAMP}, #{content,jdbcType=LONGVARCHAR}
       )
   </insert>

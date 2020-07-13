@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ExcellentworksService {
     public List<Excellentworks> getExcellentworkses();
+
+    public int updateExcellentworks(Excellentworks excellentworks);
 }

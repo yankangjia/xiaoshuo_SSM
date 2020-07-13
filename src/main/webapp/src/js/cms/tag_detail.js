@@ -12,7 +12,7 @@ EditTag.prototype.listenSubmitTagEvent = function(node,type){
         'name': name,
     };
     if(type === 'edit'){
-        data['tag_id'] = node.attr('data-tag-id');
+        data['id'] = node.attr('data-tag-id');
         url = '/cms/edit_tag/';
         message = '修改成功';
     } else if(type === 'add'){
@@ -65,7 +65,7 @@ EditTag.prototype.initDefaultNode = function(node){
         myajax.post({
             'url':'/cms/get_tag/',
             'data':{
-                'tag_id':tagId
+                'id':tagId
             },
             'success': function(result){
                 if(result['code'] === 200){
@@ -89,7 +89,7 @@ EditTag.prototype.initDefaultNode = function(node){
                 myajax.post({
                     'url': '/cms/delete_tag/',
                     'data': {
-                        'tag_id': tagId
+                        'id': tagId
                     },
                     'success': function(result){
                         if(result['code'] === 200){

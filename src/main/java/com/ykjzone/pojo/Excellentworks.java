@@ -1,17 +1,29 @@
 package com.ykjzone.pojo;
 
+import org.hibernate.validator.constraints.URL;
+
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 public class Excellentworks {
     private Integer id;
 
+    @NotNull
     private String title;
 
+    @NotNull
+    @URL
     private String link_to;
 
     private Date pub_time;
 
+    @NotNull
     private Integer location;
+
+
+    public Excellentworks(){
+        pub_time = new Date();
+    }
 
     public Integer getId() {
         return id;

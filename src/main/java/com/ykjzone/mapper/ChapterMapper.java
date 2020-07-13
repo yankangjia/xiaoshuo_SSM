@@ -9,6 +9,8 @@ import java.util.List;
 public interface ChapterMapper {
     int deleteByPrimaryKey(String id);
 
+    int deleteByNovelId(String novel_id);
+
     int insert(Chapter record);
 
     int insertSelective(Chapter record);

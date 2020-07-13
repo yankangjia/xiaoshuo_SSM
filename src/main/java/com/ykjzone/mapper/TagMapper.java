@@ -16,6 +16,12 @@ public interface TagMapper {
 
     Tag selectByPrimaryKey(Integer id);
 
+    Tag selectByName(String name);
+
+    List<Tag> selectByCategoryId(Integer category_id);
+
+    List<Tag> selectNullCategory();
+
     int updateByPrimaryKeySelective(Tag record);
 
     int updateByPrimaryKey(Tag record);

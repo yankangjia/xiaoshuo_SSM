@@ -2,6 +2,7 @@ package com.ykjzone.mapper;
 
 import com.ykjzone.pojo.User;
 import com.ykjzone.pojo.UserExample;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -23,4 +24,8 @@ public interface UserMapper {
     User selectByTelephone(String telephone);
 
     User selectByUsername(String username);
+
+    User selectByTelephoneAndPassword(@Param("telephone") String telephone, @Param("password") String password);
+
+    List<User> selectStaffs();
 }

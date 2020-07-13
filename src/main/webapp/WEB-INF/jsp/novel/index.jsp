@@ -29,7 +29,7 @@
                 <dl>
                     <c:forEach items="${all_category_name}" var="category" varStatus="st">
                         <dd class="odd">
-                            <a target='_blank' href="/novel/index_category/${category[0]}">
+                            <a target='_blank' href="/${category[0]}">
                                 <span class="cate-img ${category[0]}-img"></span>
                                 <span class="cate-name">${category[1]}</span>
                                 <span class="cate-quantity">3234232</span>
@@ -146,10 +146,10 @@
                     <c:forEach items="${rec_novels_7_17}" var="novel" varStatus="st">
                         <li>
                             <span class="novel-cate">
-                                <a href='/novel/index_category/${func:getCategoryName(novel.category.id,"en")}' target="_blank">「${novel.category.name}」</a>
+                                <a href='/index_category/${func:getCategoryName(novel.category.id,"en")}' target="_blank">「${novel.category.name}」</a>
                             </span>
                             <span class="novel-name">
-                                <a href="/novel/detail/${novel.id}" target="_blank">${func:truncate(novel.name,7)}</a>
+                                <a href="/detail/${novel.id}" target="_blank">${func:truncate(novel.name,7)}</a>
                             </span>
                             <span class="novel-author">
                                 <a href="#" target="_blank">${novel.author.pen_name}</a>
@@ -170,13 +170,13 @@
                         <c:forEach items="${rec_novels_1_6}" var="novel" varStatus="st">
                             <li>
                                 <div class="novel-img">
-                                    <a href="/novel/detail/${novel.id}" target="_blank">
+                                    <a href="/detail/${novel.id}" target="_blank">
                                         <img src="${novel.cover_url}" alt="">
                                     </a>
                                 </div>
                                 <div class="novel-info">
                                     <div class="novel-title">
-                                        <a href="/novel/detail/${novel.id}" target="_blank">${novel.name}</a>
+                                        <a href="/detail/${novel.id}" target="_blank">${novel.name}</a>
                                     </div>
                                     <div class="novel-profile editor-recommend">
                                             <%--{{ novel.profile|striptags|strip|truncatechars:50 }}--%>
@@ -202,8 +202,8 @@
                     <%--{% for novel in new_novels|slice:'0:11' %}--%>
                     <c:forEach items="${new_novels_1_11}" var="novel" varStatus="st">
                         <li>
-                            <span class="novel-cate"><a href='/novel/index_category/${func:getCategoryName(novel.category.id,"en")}' target="_blank">「${novel.category.name}」</a></span>
-                            <span class="novel-name"><a href="/novel/detail/${novel.id}">${func:truncate(novel.name,7)}</a></span>
+                            <span class="novel-cate"><a href='/index_category/${func:getCategoryName(novel.category.id,"en")}' target="_blank">「${novel.category.name}」</a></span>
+                            <span class="novel-name"><a href="/detail/${novel.id}">${func:truncate(novel.name,7)}</a></span>
                             <span class="novel-author"><a href="#">${novel.author.pen_name}</a></span>
                         </li>
                     </c:forEach>
@@ -231,7 +231,7 @@
                             <c:forEach items="${novels}" var="novel" varStatus="st0">
                                 <li>
                                     <span class="novel-cate"><a href="#" target="_blank">「${novel.category.name}」</a></span>
-                                    <span class="novel-name"><a href="/novel/detail/${novel.id}" target="_blank">${novel.name}</a></span>
+                                    <span class="novel-name"><a href="/detail/${novel.id}" target="_blank">${novel.name}</a></span>
                                 </li>
                             </c:forEach>
                         </ul>
@@ -309,7 +309,7 @@
                                 <div class="novel-info-box">
                                     <span class="novel-1">NO.1</span>
                                     <span class="novel-name">
-                                    <a href="/novel/detail/${novel.id}" target="_blank">${novel.name}</a>
+                                    <a href="/detail/${novel.id}" target="_blank">${novel.name}</a>
                                 </span>
                                     <p class="novel-author">
                                         <a href="#">${novel.category.name}</a><i>·</i><a href="#">${novel.author.pen_name}</a>
@@ -337,10 +337,10 @@
                                 </div>
                                 <div class="novel-box">
                                     <span class="novel-cate">
-                                        <a href='/novel/index_category/${func:getCategoryName(novel.category.id,"en")}'>
+                                        <a href='/index_category/${func:getCategoryName(novel.category.id,"en")}'>
                                         「${novel.category.name}」</a>
                                     </span>
-                                    <span class="novel-name"><a href="/novel/detail/${novel.id} ">${func:truncate(novel.name,7)}</a></span>
+                                    <span class="novel-name"><a href="/detail/${novel.id} ">${func:truncate(novel.name,7)}</a></span>
                                     <span class="novel-author"><a href="#">${novel.author.pen_name}</a></span>
                                 </div>
                             </li>
@@ -353,7 +353,7 @@
     </div>
 </div>
 
-<%@include file="footer.jsp"%>
-<%@include file="auth.jsp"%>
+<%@include file="base/footer.jsp"%>
+<%@include file="base/auth.jsp"%>
 </body>
 </html>

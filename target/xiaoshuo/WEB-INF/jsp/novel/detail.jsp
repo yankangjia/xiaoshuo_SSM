@@ -64,12 +64,12 @@
                         <div class="num-recommend-week"><span>1238</span>周推荐</div>
                     </div>
                     <div class="novel-btn">
-                        <a href="/novel/chapter/${chapters[0].id}">免费试读</a>
+                        <a href="/chapter/${chapters[0].id}">免费试读</a>
                         <c:if test="${is_collect == true}">
                             <a href="javascript:void(0)">已收藏</a>
                         </c:if>
                         <c:if test="${is_collect == false}">
-                            <a class="collect-btn" href="javascript:void(0)" data-novel-id="{{ novel.id }}">加入书架</a>
+                            <a class="collect-btn" href="javascript:void(0)" data-novel-id="${novel.id}">加入书架</a>
                         </c:if>
                         <%--<a href="">投推荐票</a>--%>
                         <a href="https://www.yuewen.com/app.html#appqd" target="_blank">手机App阅读</a>
@@ -177,7 +177,7 @@
                             <ul>
                                 <c:forEach items="${recommend_novels}" var="novel" varStatus="st">
                                     <li>
-                                        <a href="/novel/detail/${novel.id}">${novel.name}</a>
+                                        <a href="/detail/${novel.id}">${novel.name}</a>
                                         <span>${novel.author.pen_name}</span>
                                     </li>
                                 </c:forEach>
@@ -201,7 +201,7 @@
                     <ul>
                         <c:forEach items="${chapters}" var="chapter" varStatus="st">
                             <li>
-                                <a href="/novel/chapter/${chapter.id}">
+                                <a href="/chapter/${chapter.id}">
                                     ${chapter.title}
                                 </a>
                             </li>
@@ -213,7 +213,7 @@
     </div>
 </div>
 
-<%@include file="footer.jsp"%>
-<%@include file="auth.jsp"%>
+<%@include file="base/footer.jsp"%>
+<%@include file="base/auth.jsp"%>
 </body>
 </html>

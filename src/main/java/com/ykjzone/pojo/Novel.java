@@ -1,12 +1,42 @@
 package com.ykjzone.pojo;
 
+import com.ykjzone.util.ShortUUID;
+import org.hibernate.validator.constraints.*;
+
+import javax.validation.constraints.*;
 import java.util.Date;
 import java.util.List;
+
 
 public class Novel {
     private String id;
 
+    public static void main(String[] args){
+        String url = "http://localhost:8080/media/image/account/2020/07/05/3vrDqGhp90.jpg";
+        if(url.matches("^(\\w+://)?\\w+(\\.[\\w]+)*(\\:\\d+)?\\/.*$")){
+            System.out.println("yes");
+        }
+    }
+
+    @NotBlank(message = "请输入小说名字")
+    @Size(max=200, message = "小说名字最大长度为200")
     private String name;
+
+    @NotNull(message = "价格不能为空")
+    private Double price;
+
+    @NotBlank(message = "请上传封面图")
+    @Pattern(regexp="^(\\w+://)?\\w+(\\.[\\w]+)*(\\:\\d+)?\\/.*$", message = "图片上传错误（url错误）")
+    private String cover_url;
+
+    @NotBlank(message = "请输入简介")
+    private String profile;
+
+    @NotNull(message = "请选择分类")
+    private Integer category_id;
+
+    @NotNull(message = "请选择标签")
+    private Integer tag_id;
 
     private Integer chapters_num;
 
@@ -14,23 +44,13 @@ public class Novel {
 
     private Date pub_date;
 
-    private Double price;
-
-    private String cover_url;
-
     private Boolean is_complete;
 
     private Boolean is_recommend;
 
     private Integer views;
 
-    private String profile;
-
     private String author_id;
-
-    private int category_id;
-
-    private int tag_id;
 
     // 非数据库字段
     private User author;
@@ -40,6 +60,17 @@ public class Novel {
     private Tag tag;
 
     private List<Chapter> chapters;
+
+    // 创建Novel时调用
+    public void generate(){
+        id = ShortUUID.generateShortUuid();
+        pub_date = new Date();
+        is_complete = false;
+        is_recommend = false;
+        chapters_num = 0;
+        words_num = 0;
+        views = 0;
+    }
 
     public String getId() {
         return id;
@@ -95,6 +126,22 @@ public class Novel {
 
     public void setCover_url(String cover_url) {
         this.cover_url = cover_url == null ? null : cover_url.trim();
+    }
+
+    public Integer getCategory_id(){
+        return category_id;
+    }
+
+    public void setCategory_id(Integer category_id){
+        this.category_id = category_id;
+    }
+
+    public Integer getTag_id(){
+        return tag_id;
+    }
+
+    public void setTag_id(Integer tag_id){
+        this.tag_id = tag_id;
     }
 
     public Boolean getIs_complete() {

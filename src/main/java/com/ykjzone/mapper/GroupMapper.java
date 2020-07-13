@@ -16,6 +16,10 @@ public interface GroupMapper {
 
     Group selectByPrimaryKey(Integer id);
 
+    List<Group> selectByUserId(String user_id);
+
+    List<Group> selectAll();
+
     int updateByPrimaryKeySelective(Group record);
 
     int updateByPrimaryKey(Group record);

@@ -5,7 +5,8 @@ public class Permission {
 
     private String name;
 
-    // content_type_id
+    private Integer content_type_id;
+
     private ContentType content_type;
 
     private String codename;
@@ -24,6 +25,14 @@ public class Permission {
 
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
+    }
+
+    public Integer getContent_type_id(){
+        return content_type_id;
+    }
+
+    public void setContent_type_id(Integer content_type_id){
+        this.content_type_id = content_type_id;
     }
 
     public ContentType getContent_type() {

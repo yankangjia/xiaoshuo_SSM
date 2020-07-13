@@ -15,6 +15,34 @@
     <result column="date_joined" jdbcType="DATE" property="date_joined" />
     <result column="pen_name" jdbcType="VARCHAR" property="pen_name" />
   </resultMap>
+  <resultMap id="PermResultMap" extends="BaseResultMap" type="com.ykjzone.pojo.User">
+    <collection property="groups" javaType="List" ofType="com.ykjzone.pojo.Group">
+      <id column="gid" property="id" />
+      <result column="gname" property="name" />
+    </collection>
+    <collection property="permissions" javaType="List" ofType="com.ykjzone.pojo.Permission">
+      <id column="pid" property="id" />
+      <result column="pcodename" property="codename" />
+      <association property="content_type" javaType="com.ykjzone.pojo.ContentType">
+        <id column="ctid" property="id" />
+        <result column="ctmodel" property="model" />
+      </association>
+    </collection>
+  </resultMap>
+  <resultMap id="StaffResultMap" type="com.ykjzone.pojo.User">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="telephone" jdbcType="VARCHAR" property="telephone" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="is_superuser" jdbcType="BIT" property="is_superuser" />
+    <result column="is_active" jdbcType="BIT" property="is_active" />
+    <result column="is_author" jdbcType="BIT" property="is_author" />
+    <result column="is_staff" jdbcType="BIT" property="is_staff" />
+    <collection property="groups" javaType="List" ofType="com.ykjzone.pojo.Group">
+      <id column="gid" property="id" />
+      <result column="gname" property="name" />
+    </collection>
+  </resultMap>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -47,6 +75,10 @@
   <sql id="Base_Column_List">
     id, password, last_login, is_superuser, telephone, username, email, is_active, is_author, 
     is_staff, date_joined, pen_name
+  </sql>
+  <sql id="Perm_Column_List">
+    u.id, password, last_login, is_superuser, telephone, username, email, is_active, is_author,
+    is_staff, date_joined, pen_name, g.id gid, g.name gname, p.id pid, p.codename pcodename, ct.id ctid, ct.model ctmodel
   </sql>
   <select id="selectByExample" parameterType="com.ykjzone.pojo.UserExample" resultMap="BaseResultMap">
     select
@@ -81,16 +113,28 @@
     from xsauth_user
     where username = #{username,jdbcType=VARCHAR}
   </select>
+  <select id="selectByTelephoneAndPassword" resultMap="PermResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from xsauth_user u
+    where telephone = #{telephone,jdbcType=VARCHAR} and password = #{password,jdbcType=VARCHAR}
+  </select>
+  <select id="selectStaffs" resultMap="StaffResultMap">
+    select
+    u.id, telephone, username, email, is_superuser, is_staff, is_active, is_author, g.id gid, g.name gname
+    from xsauth_user u left join xsauth_user_groups ug on u.id = ug.user_id join auth_group g on g.id = ug.group_id
+    where u.is_staff = 1 and u.is_active = 1
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     delete from xsauth_user
     where id = #{id,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.ykjzone.pojo.User" useGeneratedKeys="true">
-    insert into xsauth_user (password, is_superuser,
+    insert into xsauth_user (id, password, is_superuser,
       telephone, username,
       is_active, is_author, is_staff, 
       date_joined)
-    values (#{password,jdbcType=VARCHAR}, #{is_superuser,jdbcType=BIT},
+    values (#{id,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{is_superuser,jdbcType=BIT},
       #{telephone,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR},
       #{is_active,jdbcType=BIT}, #{is_author,jdbcType=BIT}, #{is_staff,jdbcType=BIT}, 
       #{date_joined,jdbcType=DATE})

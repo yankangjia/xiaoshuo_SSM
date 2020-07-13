@@ -59,6 +59,23 @@
     from novel_tag
     where id = #{id,jdbcType=INTEGER}
   </select>
+  <select id="selectByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from novel_tag
+    where name = #{name,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByCategoryId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from novel_tag
+    where category_id = #{category_id,jdbcType=INTEGER}
+  </select>
+  <select id="selectNullCategory" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from novel_tag where category_id is null;
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from novel_tag
     where id = #{id,jdbcType=INTEGER}

@@ -3,23 +3,24 @@ function Chapter(){
 }
 
 
-// 发布新闻
+// 提交章节
 Chapter.prototype.listenSubmitEvent = function(){
     var submitBtn = $('#submit-btn');
     submitBtn.click(function(event){
         event.preventDefault();       // 阻止默认事件
         var btn = $(this);
         var chapterId = btn.attr('data-chapter-id');
+        var novelId = btn.attr('data-novel-id');
         var title = $("input[name='title']").val();
         var content = window.ue.getContent();
         var number = $('#number').text();
         var url = "";
         var message = "";
         if(chapterId){
-            url = '/cms/edit_chapter/';
+            url = '/account/update_chapter/';
             message = '第' + number + '章小说编辑成功！'
         } else{
-            url = '/cms/write_chapter/';
+            url = '/account/add_chapter/';
             message = '第' + number + '章小说发布成功！'
         }
         myajax.post({
@@ -27,7 +28,9 @@ Chapter.prototype.listenSubmitEvent = function(){
             'data': {
                 'title': title,
                 'content': content,
-                'chapter_id': chapterId
+                'novel_id': novelId,
+                'number': number,
+                'id': chapterId
             },
             'success': function(result){
                 if(result['code'] === 200){

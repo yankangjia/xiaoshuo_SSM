@@ -19,4 +19,6 @@ public interface UserReadMapper {
     int updateByPrimaryKeySelective(UserRead record);
 
     int updateByPrimaryKey(UserRead record);
+
+    int deleteByNovelId(String novel_id);
 }

@@ -59,13 +59,23 @@
     from xsauth_user_groups
     where id = #{id,jdbcType=INTEGER}
   </select>
+  <select id="selectByUserId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from xsauth_user_groups
+    where user_id = #{user_id,jdbcType=INTEGER}
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from xsauth_user_groups
     where id = #{id,jdbcType=INTEGER}
   </delete>
+  <delete id="deleteByUserId" parameterType="java.lang.String">
+    delete from xsauth_user_groups
+    where user_id = #{user_id,jdbcType=INTEGER}
+  </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.ykjzone.pojo.UserGroup" useGeneratedKeys="true">
     insert into xsauth_user_groups (user_id, group_id)
-    values (#{user_id,jdbcType=VARCHAR}, #{group_id,jdbcType=INTEGER})
+    values (#{user.id,jdbcType=VARCHAR}, #{group.id,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.ykjzone.pojo.UserGroup" useGeneratedKeys="true">
     insert into xsauth_user_groups

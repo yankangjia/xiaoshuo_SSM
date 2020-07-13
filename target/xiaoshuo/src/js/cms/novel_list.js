@@ -32,7 +32,7 @@ NovelList.prototype.listenDeleteNovelEvent = function(){
             'text': '您确定要删除这个小说吗？',
             'confirmCallback': function(){
                 myajax.post({
-                    'url': '/account/delete_novel/',
+                    'url': '/cms/delete_novel/',
                     'data': {
                         'novel_id': novelId
                     },

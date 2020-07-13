@@ -5,6 +5,19 @@
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
   </resultMap>
+  <resultMap id="AndTagsResultMap" type="com.ykjzone.pojo.Category">
+    <id column="cid" jdbcType="INTEGER" property="id" />
+    <result column="cname" jdbcType="VARCHAR" property="name" />
+    <collection property="tags" ofType="com.ykjzone.pojo.Tag">
+      <id column="tid" property="id" />
+      <result column="tname" property="name" />
+    </collection>
+  </resultMap>
+  <resultMap id="AndNovelNumsMap" type="com.ykjzone.pojo.Category">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="novels_num" jdbcType="VARCHAR" property="novels_num" />
+  </resultMap>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -37,6 +50,9 @@
   <sql id="Base_Column_List">
     id, name
   </sql>
+  <sql id="And_Tags_Column_List">
+    c.id cid, c.name cname, t.id tid, t.name tname
+  </sql>
   <select id="selectByExample" parameterType="com.ykjzone.pojo.CategoryExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
@@ -57,6 +73,27 @@
     <include refid="Base_Column_List" />
     from novel_category
     where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAndTags" resultMap="AndTagsResultMap">
+    select
+    <include refid="And_Tags_Column_List" />
+    from novel_category c, novel_tag t
+    where c.id = t.category_id
+  </select>
+  <select id="selectOneAndTags" resultMap="AndTagsResultMap">
+    select
+    <include refid="And_Tags_Column_List" />
+    from novel_category c, novel_tag t
+    where c.id = t.category_id and c.id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAndTagsByName" resultMap="AndTagsResultMap">
+    select
+    <include refid="And_Tags_Column_List" />
+    from novel_category c, novel_tag t
+    where c.id = t.category_id and c.name = #{name,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAndNovelsNum" resultMap="AndNovelNumsMap">
+    select c.id, c.name, COUNT(n.id) 'novels_num' from novel_category c left join novel n on c.id = n.category_id GROUP BY c.id;
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from novel_category

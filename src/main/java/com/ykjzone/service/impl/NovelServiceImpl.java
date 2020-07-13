@@ -5,19 +5,22 @@ import com.ykjzone.mapper.NovelMapper;
 import com.ykjzone.pojo.Category;
 import com.ykjzone.pojo.Novel;
 import com.ykjzone.pojo.NovelExample;
+import com.ykjzone.pojo.User;
 import com.ykjzone.service.NovelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class NovelServiceImpl implements NovelService {
     @Autowired
     NovelMapper novelMapper;
+
+    @Override
+    public List<Novel> getByExampleWithBLOBs(NovelExample example) {
+        return novelMapper.selectByExampleWithBLOBs(example);
+    }
 
     public List<Novel> getRecommendNovels(Boolean getDetail) {
         NovelExample example = new NovelExample();
@@ -52,7 +55,7 @@ public class NovelServiceImpl implements NovelService {
     public List<Novel> getNewNovels() {
         NovelExample example = new NovelExample();
         example.setOrderByClause("pub_date desc");
-        List<Novel> novels = novelMapper.selectManyRelated(example);
+        List<Novel> novels = novelMapper.selectByExampleWithBLOBs(example);
         return novels;
     }
 
@@ -89,5 +92,69 @@ public class NovelServiceImpl implements NovelService {
     public Novel getByPrimaryKey(String id){
         Novel novel = novelMapper.selectByPrimaryKey(id);
         return novel;
+    }
+
+    @Override
+    public List<Map<String,Object>> getReadedNovels(User user, int count) {
+        PageHelper.offsetPage(0,count);
+        List<Novel> readed_novels =  novelMapper.selectReadedNovelsByUserId(user.getId(), false);
+        // 查看每一个Novel是否被收藏
+        PageHelper.offsetPage(0,count);
+        List<Novel> read_collected_novels = novelMapper.selectReadedNovelsByUserId(user.getId(), true);
+        Iterator read_iterator = readed_novels.iterator();
+        Iterator read_collected_iterator = read_collected_novels.iterator();
+        // novels: [{"novel":Novel,"is_collect":true}, ...]
+        List<Map<String,Object>> novels = new ArrayList<>();
+        while(read_collected_iterator.hasNext()){
+            Novel c_novel =(Novel) read_collected_iterator.next();
+            while(read_iterator.hasNext()){
+                Novel novel  = (Novel) read_iterator.next();;
+                Map<String,Object> map = new HashMap<>();
+                map.put("novel",novel);
+                if(novel.getId().equals(c_novel.getId())){
+                    map.put("is_collect", true);
+                    novels.add(map);
+                    break;      // 遍历read_collected的下一个
+                }
+                else map.put("is_collect", false);
+                novels.add(map);
+            }
+        }
+        return novels;
+    }
+
+    @Override
+    public List<Novel> getCollect(User user) {
+        return novelMapper.selectCollectByUserId(user.getId());
+    }
+
+    @Override
+    public List<Novel> getWorks(User user) {
+        return novelMapper.selectWorksByUserId(user.getId());
+    }
+
+    @Override
+    public void addNovel(Novel novel) {
+        novelMapper.insert(novel);
+    }
+
+    @Override
+    public void updateNovelWithBLOBs(Novel novel) {
+        novelMapper.updateByPrimaryKeyWithBLOBs(novel);
+    }
+
+    @Override
+    public void updateNovel(Novel novel) {
+        novelMapper.updateByPrimaryKey(novel);
+    }
+
+    @Override
+    public void updateSelective(Novel novel) {
+        novelMapper.updateByPrimaryKeySelective(novel);
+    }
+
+    @Override
+    public void deleteById(String novel_id) {
+        novelMapper.deleteByPrimaryKey(novel_id);
     }
 }

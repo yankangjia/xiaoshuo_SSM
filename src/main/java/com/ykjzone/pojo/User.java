@@ -1,18 +1,29 @@
 package com.ykjzone.pojo;
 
+//import javax.validation.constraints.*;
+import org.hibernate.validator.constraints.NotBlank;
+
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.util.Date;
+import java.util.List;
 
 public class User {
     private String id;
 
+    @Size(max=16, min=6)
     private String password;
 
     private Date last_login;
 
     private Boolean is_superuser;
 
+    @NotBlank
+    @Pattern(regexp="^1[3-9]\\d9$")
     private String telephone;
 
+    @NotBlank
+    @Size(max=12,min=2)
     private String username;
 
     private String email;
@@ -27,8 +38,34 @@ public class User {
 
     private String pen_name;
 
-    public static void createUser(String username, String password, String telephone){
+    private List<Group> groups;
 
+    private List<Permission> permissions;
+
+
+    public List<Group> getGroups(){
+        return groups;
+    }
+
+    public void setGroups(List<Group> groups){
+        this.groups = groups;
+    }
+
+    public List<Permission> getPermissions(){
+        return permissions;
+    }
+
+    public void setPermissions(List<Permission> permissions){
+        this.permissions = permissions;
+    }
+
+    public boolean hasPermission(String perm){
+        if(perm == null || perm.equals(""))
+            return false;
+        for(Permission p : permissions)
+            if(perm.equals(p.getCodename()))
+                return true;
+        return false;
     }
 
     public String getId() {

@@ -31,7 +31,7 @@
             <li>
                 <a href="/">快速导航</a>
                 <div class="dropdown">
-                    <a target="_blank" href="/novel/whole/">全部作品</a>
+                    <a target="_blank" href="/whole/">全部作品</a>
                     <%
                         // 获取分类名称1-8
                         String[][] all_category_name = (String[][]) request.getAttribute("all_category_name");
@@ -42,7 +42,7 @@
                         request.setAttribute("all_category_name_1_8",all_category_name_1_8);
                     %>
                     <c:forEach items="${all_category_name_1_8}" var="category" varStatus="st">
-                        <a target="_blank" href="/novel/index_category/${category[0]}">${category[1]}</a>
+                        <a target="_blank" href="/index_category/${category[0]}">${category[1]}</a>
                     </c:forEach>
                 </div>
             </li>
@@ -54,20 +54,20 @@
             </a>
         </div>
         <div class="auth-group">
-            <c:if test="${user.is_authenticated == true}">
+            <c:if test="${user != null}">
                 <a href="/account/index/">${user.username}</a>
                 <c:if test="${user.is_staff == true}">
                     <a href="/account/index/">后台管理</a>
                 </c:if>
                 <a href="/xsauth/logout/">退出</a>
             </c:if>
-            <c:if test="${user.is_authenticated == false}">
+            <c:if test="${user == null}">
                 <a href="javascript:void(0);" class="sign-in">登录</a>
                 <a href="javascript:void(0);" class="sign-up">注册</a>
             </c:if>
         </div>
         <div class="search">
-            <form action="/novel/search/">
+            <form action="/search/">
                 <%--{% csrf_token %}--%>
                 <input type="text" name="q" value="${query}" id="text" class="text" placeholder="你的灵兽看起来很好吃">
                 <label class="submit-btn iconfont icon-baseline-search-px" for="submit"></label>
@@ -83,7 +83,7 @@
             <div class="path">
                 <a href="/">首页</a>
                 <i>></i>
-                <a href="/novel/index_category/${category_en_name}/">${chapter.novel.category.name}</a>
+                <a href="/index_category/${category_en_name}/">${chapter.novel.category.name}</a>
                 <i>></i>
                 <a href="javascript:void(0)">${chapter.novel.name}</a>
             </div>
@@ -94,7 +94,7 @@
             <div class="left-sidebar">
                 <ul>
                     <li>
-                        <a href="/novel/detail/${chapter.novel.id}">
+                        <a href="/detail/${chapter.novel.id}">
                             <i class="iconfont icon-list"></i>
                             <span>目录</span>
                         </a>
@@ -112,15 +112,15 @@
                         </a>
                     </li>
                     <li>
-                        <c.if test="${collected == true}">
+                        <c:if test="${is_collect == true}">
                             <span class="collected">已在书架</span>
-                        </c.if>
-                        <c.if test="${collected == false}">
+                        </c:if>
+                        <c:if test="${is_collect == false}">
                             <a href="javascript:void(0);" class="collect-btn">
                                 <i class="iconfont icon-books"></i>
                                 <span>书架</span>
                             </a>
-                        </c.if>
+                        </c:if>
                     </li>
                     <li>
                         <a href="#">
@@ -226,7 +226,7 @@
                     </h2>
                     <div class="chapter-info">
                         <div class="novel-name">
-                            <a href="/novel/detail/${chapter.novel.id}">
+                            <a href="/detail/${chapter.novel.id}">
                                 <i class="iconfont icon-book"></i>
                                 ${chapter.novel.name}
                             </a>
@@ -256,7 +256,7 @@
             <div class="novel-switch">
                 <div class="switch-btn previous">
                     <c:if test="${previous_id != null and previous_id != ''}">
-                        <a href="/novel/chapter/${previous_id}">
+                        <a href="/chapter/${previous_id}">
                     </c:if>
                     <c:if test="${previous_id == null or previous_id == ''}">
                         <a href="javascript:void(0);" class="disabled">
@@ -265,13 +265,13 @@
                     </a>
                 </div>
                 <div class="switch-btn catalogue">
-                    <a href="/novel/detail/${chapter.novel.id}" class="border-a">
+                    <a href="/detail/${chapter.novel.id}" class="border-a">
                         <span>目录</span>
                     </a>
                 </div>
                 <div class="switch-btn next">
                     <c:if test="${next_id != null and next_id != ''}">
-                        <a href="/novel/chapter/${next_id}">
+                        <a href="/chapter/${next_id}">
                     </c:if>
                     <c:if test="${next_id == null or next_id == ''}">
                         <a href="javascript:void(0);" class="disabled">
@@ -285,6 +285,6 @@
 </div>
 <footer></footer>
 
-<%@include file="auth.jsp"%>
+<%@include file="base/auth.jsp"%>
 </body>
 </html>

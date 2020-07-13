@@ -19,7 +19,7 @@
             <div class="auth">
                 <c:if test="${user != null}">
                     <a href="/account/index/">${user.username}</a>
-                    <c:if test="user.is_staff == true">
+                    <c:if test="${user.is_staff == true || user.is_superuser == true}">
                         <a href="/cms/index/">后台管理</a>
                     </c:if>
                     <a href="/xsauth/logout/">退出</a>
@@ -58,14 +58,14 @@
                         作品分类
                     </a>
                 </li>
-                <li class="nav-li"><a href="/novel/whole/">全部作品</a></li>
-                <li class="nav-li"><a href="/novel/rank/">排行</a></li>
-                <li class="nav-li"><a href="/novel/whole?is_complete=1">完本</a></li>
-                <li class="nav-li"><a href="/novel/whole?is_free=1">免费</a></li>
-                <c:if test="user.is_author">
+                <li class="nav-li"><a href="/whole/">全部作品</a></li>
+                <li class="nav-li"><a href="/rank/">排行</a></li>
+                <li class="nav-li"><a href="/whole?is_complete=1">完本</a></li>
+                <li class="nav-li"><a href="/whole?is_free=1">免费</a></li>
+                <c:if test="${user.is_author}">
                     <li class="nav-li"><a target='_blank' href="/account/index/">作家专区</a></li>
                 </c:if>
-                <c:if test="!user.is_author">
+                <c:if test="${!user.is_author}">
                     <li class="nav-li"><a target='_blank' href="/account/become_writer/">作家专区</a></li>
                 </c:if>
                 <li class="nav-li"><a target='_blank' href="https://www.yuewen.com/app.html#appqd">客户端</a></li>

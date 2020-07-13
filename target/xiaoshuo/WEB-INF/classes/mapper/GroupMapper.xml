@@ -58,6 +58,15 @@
     from auth_group
     where id = #{id,jdbcType=INTEGER}
   </select>
+  <select id="selectByUserId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    g.id, g.name
+    from auth_group g, xsauth_user_groups ug
+    where g.id = ug.group_id and ug.user_id = #{user_id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name from auth_group
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from auth_group
     where id = #{id,jdbcType=INTEGER}

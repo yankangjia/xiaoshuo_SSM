@@ -18,7 +18,7 @@ Banners.prototype.addImageSelectEvent = function(bannerItem){
     imageInput.change(function(){
         var file = this.files[0];
         var formData = new FormData();
-        formData.append('file',file);
+        formData.append('image',file);
         myajax.post({
             'url': '/cms/upload_file/',
             'data':formData,
@@ -34,7 +34,7 @@ Banners.prototype.addImageSelectEvent = function(bannerItem){
     });
 };
 
-// 监听关闭事件
+// 监听删除事件
 Banners.prototype.addRemoveBannerEvent = function(bannerItem){
     var closeBtn = bannerItem.find('.close-btn');
     var bannerId = null;
@@ -47,7 +47,7 @@ Banners.prototype.addRemoveBannerEvent = function(bannerItem){
                     myajax.post({
                         'url': '/cms/delete_banner/',
                         'data': {
-                            'banner_id': bannerId,
+                            'id': bannerId,
                         },
                         'success': function(result){
                             if(result['code'] === 200){
@@ -91,7 +91,7 @@ Banners.prototype.addSaveBannerEvent = function(bannerItem){
                 'priority': priority,
                 'image_url': imageUrl,
                 'link_to': linkTo,
-                'pk': bannerId
+                'id': bannerId
             },
             'success': function(result){
                 if(result['code'] === 200){
@@ -149,7 +149,7 @@ Banners.prototype.loadData = function(){
         'url': '/cms/banner_list/',
         'success': function(result){
             if(result['code'] === 200){
-                var banners = result['data'];
+                var banners = result['data']['banners'];
                 for(var i=0;i<banners.length;i++){
                     var banner = banners[i];
                     self.createBannerItem(banner);

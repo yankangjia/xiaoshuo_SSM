@@ -3,7 +3,7 @@ function Chapter(){
 }
 
 
-// 发布新闻
+// 修改章节
 Chapter.prototype.listenSubmitEvent = function(){
     var submitBtn = $('#submit-btn');
     submitBtn.click(function(event){
@@ -13,26 +13,22 @@ Chapter.prototype.listenSubmitEvent = function(){
         var title = $("input[name='title']").val();
         var content = window.ue.getContent();
         var number = $('#number').text();
-        var url = "";
-        var message = "";
-        if(chapterId){
-            url = '/cms/edit_chapter/';
-            message = '第' + number + '章小说编辑成功！'
-        } else{
-            url = '/cms/write_chapter/';
-            message = '第' + number + '章小说发布成功！'
-        }
+        var url = '/cms/update_chapter/';
+        var message = '第' + number + '章小说编辑成功！';
+
         myajax.post({
             'url': url,
             'data': {
                 'title': title,
                 'content': content,
-                'chapter_id': chapterId
+                'id': chapterId,
+                'number': number
             },
             'success': function(result){
                 if(result['code'] === 200){
                     xfzalert.alertSuccess(message,function(){
-                        window.location = '../../../..';
+                        console.log(result['data']['redirect']);
+                        window.location = result['data']['redirect'];
                     })
                 } else{
                     console.log(result)

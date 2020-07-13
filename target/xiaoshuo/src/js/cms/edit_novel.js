@@ -1,16 +1,16 @@
-function PubNovel(){
+function EditNovel(){
 
 }
 
 // 监听上传图片事件
-PubNovel.prototype.listenUploadFileEvent = function(){
+EditNovel.prototype.listenUploadFileEvent = function(){
     var uploadBtn = $('#thumbnail-btn');    // input
     uploadBtn.change(function(){
         var file = $(this)[0].files[0];
         var formData = new FormData();
         formData.append('file',file);
         myajax.post({
-            'url': '/account/upload_file/',
+            'url': '/cms/upload_file/',
             'data': formData,
             'processData': false,
             'contentType': false,
@@ -26,28 +26,28 @@ PubNovel.prototype.listenUploadFileEvent = function(){
 };
 
 // 图片上传过程中
-PubNovel.prototype.handleFileUploadProgress = function(result){
+EditNovel.prototype.handleFileUploadProgress = function(result){
     var total = result.total;
     var percent = total.percent;    // int  上传百分比
     var percentText = percent.toFixed(0) + '%';     // 去除小数部分
-    var progressGroup = PubNovel.progressGroup;
+    var progressGroup = EditNovel.progressGroup;
     progressGroup.show();
-    var progressBar = PubNovel.progressBar;
+    var progressBar = EditNovel.progressBar;
     progressBar.css('width',percentText);
     progressBar.text(percentText)
 };
 
 // 图片上传错误
-PubNovel.prototype.handleFileUploadError = function(error){
-    var progressGroup = PubNovel.progressGroup;
+EditNovel.prototype.handleFileUploadError = function(error){
+    var progressGroup = EditNovel.progressGroup;
     progressGroup.hide();
     console.log(result.message)
 };
 
 // 图片上传成功
-PubNovel.prototype.handleFileUploadComplete = function(response){
+EditNovel.prototype.handleFileUploadComplete = function(response){
     // response:    { hash: ... , key: ... }
-    var progressGroup = PubNovel.progressGroup;
+    var progressGroup = EditNovel.progressGroup;
     progressGroup.hide();
     var domain = 'http://q0i4557d7.bkt.clouddn.com/';
     var filename = response.key;
@@ -57,7 +57,7 @@ PubNovel.prototype.handleFileUploadComplete = function(response){
 };
 
 // 将图片上传到七牛云
-PubNovel.prototype.listenQiniuUploadFileEvent = function(){
+EditNovel.prototype.listenQiniuUploadFileEvent = function(){
     var self = this;
     var thumbnailInput = $('#thumbnail-btn');
     thumbnailInput.change(function(){
@@ -83,7 +83,7 @@ PubNovel.prototype.listenQiniuUploadFileEvent = function(){
                     };
                     var observable = qiniu.upload(file,key,token,putExtra,config);
                     var observer = {
-                        // 以下函数中的this不代表PubNovel对象
+                        // 以下函数中的this不代表EditNovel对象
                         'next': self.handleFileUploadProgress,
                         'error': self.handleFileUploadError,
                         'complete': self.handleFileUploadComplete
@@ -96,7 +96,7 @@ PubNovel.prototype.listenQiniuUploadFileEvent = function(){
 };
 
 // 编辑小说
-PubNovel.prototype.listenSubmitEvent = function(){
+EditNovel.prototype.listenSubmitEvent = function(){
     var submitBtn = $('#submit-btn');
     submitBtn.click(function(){
         event.preventDefault();       // 阻止默认事件
@@ -104,25 +104,27 @@ PubNovel.prototype.listenSubmitEvent = function(){
         var novelId = btn.attr('data-novel-id');
         var name = $("input[name='name']").val();
         var cover_url = $("input[name='cover_url']").val();
-        var category = $("select[name='category']").val();
+        var category_id = $("select[name='category_id']").val();
+        var tag_id = $('input[name="tag_id"]:checked').val();
         var price = $("input[name='price']").val();
         var profile = window.ue.getContent();
-        url = '/account/edit_novel/';
+        url = '/cms/update_novel/';
         myajax.post({
             'url': url,
             'data': {
                 'name': name,
                 'cover_url': cover_url,
-                'category': category,
+                'category_id': category_id,
+                'tag_id': tag_id,
                 'profile': profile,
                 'price': price,
-                'novel_id': novelId
+                'id': novelId
             },
             'success': function(result){
                 if(result['code'] === 200){
                     var message = '恭喜，小说编辑成功！';
                     xfzalert.alertSuccess(message,function(){
-                        window.location = '../../../..';
+                        window.location = '/cms/novel_list/';
                     })
                 } else{
                     console.log(result)
@@ -132,15 +134,84 @@ PubNovel.prototype.listenSubmitEvent = function(){
     })
 };
 
+// 初始化分类和标签
+EditNovel.prototype.initCategory = function(){
+    var select = $('#category-form');
+    var categoryId = select.attr('data-category-id');
+    categoryId = categoryId ? parseInt(categoryId) : 1;
+
+    var radioGroup = $('.radio-group');
+    var tagId = radioGroup.attr('data-tag-id');
+    if(tagId)
+        tagId = parseInt(tagId);
+
+    myajax.get({
+        'url': '/cms/get_cate_list/',
+        'success': function(result){
+            if(result['code'] === 200){
+                var cateList = result['data']['cate_list'];
+                // 初始化分类
+                for(var i in cateList){
+                    var category = cateList[i];
+                    if(categoryId && categoryId === category.id){
+                        select.append('<option value="'+category.id+'" selected>'+category.name+'</option>');
+                    } else{
+                        select.append('<option value="'+category.id+'">'+category.name+'</option>');
+                    }
+                }
+
+                // 初始化标签
+                for(var i in cateList){
+                    if(categoryId === cateList[i]['id']){
+                        var tags = cateList[i]['tags'];
+                        for(var j in tags) {
+                            var tag = tags[j];
+                            var label = $('<label class="radio-inline"></label>');
+                            var redio = '';
+                            if(tagId && tagId === tag['id'])
+                                redio = $('<input type="radio" name="tag_id" value="' + tag['id'] + '" checked>');
+                            else
+                                redio = $('<input type="radio" name="tag_id" value="' + tag['id'] + '">');
+                            label.append(redio);
+                            label.append(' ' + tag['name']);
+                            radioGroup.append(label);
+                        }
+                        break;
+                    }
+                }
+
+                // 分类改变时，相应的标签随之改变
+                select.change(function(){
+                    radioGroup.empty();
+                    var category_id = parseInt($(this).val());
+                    for(var i in cateList){
+                        if(category_id === cateList[i]['id']){
+                            var tags = cateList[i]['tags'];
+                            for(var j in tags){
+                                var tag = tags[j];
+                                var label = $('<label class="radio-inline"></label>');
+                                var redio = $('<input type="radio" name="tag_id" value="'+tag['id']+'">');
+                                label.append(redio);
+                                label.append(' '+tag['name']);
+                                radioGroup.append(label);
+                            }
+                        }
+                    }
+                });
+            }
+        }
+    });
+};
+
 // 初始化UEditor
-PubNovel.prototype.initUEditor = function(){
+EditNovel.prototype.initUEditor = function(){
     window.ue = UE.getEditor("editor",{
         'initialFrameHeight': 400,
         'serverUrl': '/ueditor/upload/',
     })
 };
 
-PubNovel.prototype.listenIsFreeEvent = function(){
+EditNovel.prototype.listenIsFreeEvent = function(){
     var isFreeInput = $("select[name='is_free']");
     var priceInput = $("input[name='price']");
     if(isFreeInput.val() === '1') {
@@ -163,7 +234,8 @@ PubNovel.prototype.listenIsFreeEvent = function(){
     });
 };
 
-PubNovel.prototype.run = function(){
+EditNovel.prototype.run = function(){
+    this.initCategory();
     // 缩略图上传到本地
     this.listenUploadFileEvent();
     // 缩略图上传到七牛云
@@ -175,8 +247,8 @@ PubNovel.prototype.run = function(){
 };
 
 $(function(){
-    var pubNovel = new PubNovel();
-    pubNovel.run();
-    PubNovel.progressGroup = $('#progress-group');
-    PubNovel.progressBar = $('.progress-bar');
+    var editNovel = new EditNovel();
+    editNovel.run();
+    EditNovel.progressGroup = $('#progress-group');
+    EditNovel.progressBar = $('.progress-bar');
 });

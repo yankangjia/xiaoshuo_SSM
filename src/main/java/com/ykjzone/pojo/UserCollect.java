@@ -3,10 +3,12 @@ package com.ykjzone.pojo;
 public class UserCollect {
     private Integer id;
 
-    // user_id
+    private String user_id;
+
+    private String novel_id;
+
     private User user;
 
-    // novel_id
     private Novel novel;
 
     public Integer getId() {
@@ -15,6 +17,22 @@ public class UserCollect {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getUser_id(){
+        return user_id;
+    }
+
+    public void setUser_id(String user_id){
+        this.user_id = user_id;
+    }
+
+    public String getNovel_id(){
+        return novel_id;
+    }
+
+    public void setNovel_id(String novel_id){
+        this.novel_id = novel_id;
     }
 
     public User getUser() {

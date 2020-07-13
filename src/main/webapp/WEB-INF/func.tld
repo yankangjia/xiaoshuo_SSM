@@ -79,4 +79,40 @@
             profile: ${func:formatDate(Date, String)}
         </example>
     </function>
+
+    <function>
+        <description>
+            Finds if the novel list contains the specified novel.
+        </description>
+        <name>hasNovel</name>
+        <function-class>com.ykjzone.util.Filters</function-class>
+        <function-signature>boolean hasNovel(java.util.List,com.ykjzone.pojo.Novel)</function-signature>
+        <example>
+            is_collection: ${func:hasNovel(List, Novel)}
+        </example>
+    </function>
+
+    <function>
+        <description>
+            Check to see if the user has this permission.
+        </description>
+        <name>hasPermission</name>
+        <function-class>com.ykjzone.util.Filters</function-class>
+        <function-signature>boolean hasPermission(com.ykjzone.pojo.User,java.lang.String))</function-signature>
+        <example>
+            has_permission: ${func:hasPermission(User, String)}
+        </example>
+    </function>
+
+    <function>
+        <description>
+            Determines whether the group list contains the specified group.
+        </description>
+        <name>hasGroup</name>
+        <function-class>com.ykjzone.util.Filters</function-class>
+        <function-signature>boolean hasGroup(java.util.List, com.ykjzone.pojo.Group)</function-signature>
+        <example>
+            has_group: ${func:hasGroup(List, group)}
+        </example>
+    </function>
 </taglib>

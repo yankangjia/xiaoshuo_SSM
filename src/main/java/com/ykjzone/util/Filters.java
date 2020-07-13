@@ -1,10 +1,14 @@
 package com.ykjzone.util;
 
 import com.ykjzone.pojo.Category;
+import com.ykjzone.pojo.Group;
+import com.ykjzone.pojo.Novel;
+import com.ykjzone.pojo.User;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.regex.Pattern;
 
 public class Filters {
@@ -151,5 +155,26 @@ public class Filters {
     public static String formatDate(Date date, String strDateFormat){
         SimpleDateFormat sdf = new SimpleDateFormat(strDateFormat);
         return sdf.format(date);
+    }
+
+    public static boolean hasNovel(List<Novel> novelList, Novel novel){
+        for(Novel n : novelList){
+            if(n.getId().equals(novel.getId())) return true;
+        }
+        return false;
+    }
+
+    public static boolean hasPermission(User user, String perm){
+        if(user == null) return false;
+        return user.hasPermission(perm);
+    }
+
+    public static boolean hasGroup(List<Group> groups, Group group){
+        for(Group g : groups){
+            if(g.getId() != null && g.getId().equals(group.getId())){
+                return true;
+            }
+        }
+        return false;
     }
 }

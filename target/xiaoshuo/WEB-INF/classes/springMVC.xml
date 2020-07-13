@@ -20,6 +20,7 @@
     <!--开通静态资源的访问-->
     <mvc:default-servlet-handler />
 
+
     <!-- 视图定位 -->
     <bean
             class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -31,4 +32,16 @@
 
     <!-- 对上传文件的解析-->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+
+    <!--拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/account/**" />
+            <bean class="com.ykjzone.interceptor.AuthInterceptor" />
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/cms/**" />
+            <bean class="com.ykjzone.interceptor.CMSInterceptor" />
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>

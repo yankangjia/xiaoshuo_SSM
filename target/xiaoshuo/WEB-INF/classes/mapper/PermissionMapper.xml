@@ -7,6 +7,12 @@
     <result column="content_type_id" jdbcType="INTEGER" property="content_type_id" />
     <result column="codename" jdbcType="VARCHAR" property="codename" />
   </resultMap>
+  <resultMap id="ByUserIdResultMap" type="com.ykjzone.pojo.Permission">
+    <id column="pid" jdbcType="INTEGER" property="id" />
+    <result column="pname" jdbcType="VARCHAR" property="name" />
+    <result column="content_type_id" jdbcType="INTEGER" property="content_type_id" />
+    <result column="pcodename" jdbcType="VARCHAR" property="codename" />
+  </resultMap>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -59,6 +65,12 @@
     <include refid="Base_Column_List" />
     from auth_permission
     where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectByUserId" parameterType="java.lang.String" resultMap="ByUserIdResultMap">
+    select
+    p.id pid, p.name pname, p.content_type_id, p.codename pcodename
+    from xsauth_user u, auth_group g, xsauth_user_groups ug, auth_group_permissions gp, auth_permission p
+    where u.id = ug.user_id and ug.group_id = g.id and g.id = gp.group_id and p.id = gp.permission_id and u.id = #{user_id,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from auth_permission

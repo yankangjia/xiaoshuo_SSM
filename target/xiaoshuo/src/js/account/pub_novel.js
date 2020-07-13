@@ -8,7 +8,7 @@ PubNovel.prototype.listenUploadFileEvent = function(){
     uploadBtn.change(function(){
         var file = $(this)[0].files[0];
         var formData = new FormData();
-        formData.append('file',file);
+        formData.append('image',file);
         myajax.post({
             'url': '/account/upload_file/',
             'data': formData,
@@ -105,27 +105,27 @@ PubNovel.prototype.listenSubmitEvent = function(){
 
         var name = $("input[name='name']").val();
         var cover_url = $("input[name='cover_url']").val();
-        var category = $("select[name='category']").val();
-        var tag = $('input[name="tag"]:checked').val();
-        var price = $("input[name='price']").val();
+        var category_id = $("select[name='category_id']").val();
+        var tag_id = $('input[name="tag_id"]:checked').val();
+        var price = $("input[name='price']").val().trim();
         var profile = window.ue.getContent();
 
         var url = "";
         if(novelId){
-            url = '/account/edit_novel/';
+            url = '/account/update_novel/';
         } else{
-            url = '/account/pub_novel/';
+            url = '/account/add_novel/';
         }
         myajax.post({
             'url': url,
             'data': {
                 'name': name,
                 'cover_url': cover_url,
-                'category': category,
-                'tag': tag,
+                'category_id': category_id,
+                'tag_id': tag_id,
                 'profile': profile,
                 'price': price,
-                'novel_id': novelId
+                'id': novelId
             },
             'success': function(result){
                 if(result['code'] === 200){
@@ -136,7 +136,7 @@ PubNovel.prototype.listenSubmitEvent = function(){
                         message = '恭喜，小说发布成功！'
                     }
                     xfzalert.alertSuccess(message,function(){
-                        window.location = '../../../..';
+                        window.location = '/account/novel_list/';
                     })
                 } else{
                     console.log(result)
@@ -181,35 +181,65 @@ PubNovel.prototype.initUEditor = function(){
 // 初始化分类和标签
 PubNovel.prototype.initCategory = function(){
     var select = $('#category-form');
+    var categoryId = select.attr('data-category-id');
+    categoryId = categoryId ? parseInt(categoryId) : 1;
+
     var radioGroup = $('.radio-group');
+    var tagId = radioGroup.attr('data-tag-id');
+    if(tagId)
+        tagId = parseInt(tagId);
+
     myajax.get({
         'url': '/account/get_cate_list/',
         'success': function(result){
             if(result['code'] === 200){
                 var cateList = result['data']['cate_list'];
                 // 初始化分类
-                for(var i=0;i<cateList.length;i++){
-                    select.append('<option value="'+cateList[i].id+'">'+cateList[i].name+'</option>');
+                for(var i in cateList){
+                    var category = cateList[i];
+                    if(categoryId && categoryId === category.id){
+                        select.append('<option value="'+category.id+'" selected>'+category.name+'</option>');
+                    } else{
+                        select.append('<option value="'+category.id+'">'+category.name+'</option>');
+                    }
                 }
+
                 // 初始化标签
-                for(var j=0;j<cateList[0]['tags'].length;j++) {
-                    var label = $('<label class="radio-inline"></label>');
-                    var redio = $('<input type="radio" name="tag" value="' + cateList[0]['tags'][j].id + '">');
-                    label.append(redio);
-                    label.append(' ' + cateList[0]['tags'][j].name);
-                    radioGroup.append(label);
+                for(var i in cateList){
+                    if(categoryId === cateList[i]['id']){
+                        var tags = cateList[i]['tags'];
+                        for(var j in tags) {
+                            var tag = tags[j];
+                            var label = $('<label class="radio-inline"></label>');
+                            var redio = '';
+                            if(tagId && tagId === tag['id'])
+                                redio = $('<input type="radio" name="tag_id" value="' + tag['id'] + '" checked>');
+                            else
+                                redio = $('<input type="radio" name="tag_id" value="' + tag['id'] + '">');
+                            label.append(redio);
+                            label.append(' ' + tag['name']);
+                            radioGroup.append(label);
+                        }
+                        break;
+                    }
                 }
+
                 // 分类改变时，相应的标签随之改变
                 select.change(function(){
                     radioGroup.empty();
-                    var category_id = $(this).val();
-                    var tags = cateList[category_id-1]['tags'];
-                    for(var j=0;j<tags.length;j++){
-                        var label = $('<label class="radio-inline"></label>');
-                        var redio = $('<input type="radio" name="tag" value="'+tags[j].id+'">');
-                        label.append(redio);
-                        label.append(' '+tags[j].name);
-                        radioGroup.append(label);
+                    var category_id = parseInt($(this).val());
+                    for(var i in cateList){
+                        if(category_id === cateList[i]['id']){
+                            var tags = cateList[i]['tags'];
+                            for(var j in tags){
+                                var tag = tags[j];
+                                var label = $('<label class="radio-inline"></label>');
+                                var redio = $('<input type="radio" name="tag_id" value="'+tag['id']+'">');
+                                label.append(redio);
+                                label.append(' '+tag['name']);
+                                radioGroup.append(label);
+                            }
+                        }
                     }
                 });
             }

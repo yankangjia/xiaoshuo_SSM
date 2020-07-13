@@ -8,7 +8,7 @@ Collect.prototype.listenCollectNovelEvent = function(){
         var self = $(this);
         var novelId = $(this).parents('.novel-group').attr('data-novel-id');
         myajax.post({
-            'url': '/novel/collect/',
+            'url': '/account/collect/',
             'data': {
                 'novel_id': novelId
             },

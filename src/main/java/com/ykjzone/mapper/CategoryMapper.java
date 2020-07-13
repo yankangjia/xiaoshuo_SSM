@@ -12,9 +12,16 @@ public interface CategoryMapper {
 
     int insertSelective(Category record);
 
+    Category selectAndTagsByName(String name);
+
     List<Category> selectByExample(CategoryExample example);
 
     Category selectByPrimaryKey(Integer id);
+
+    List<Category> selectAndTags();
+    Category selectOneAndTags(String id);
+
+    List<Category> selectAndNovelsNum();
 
     int updateByPrimaryKeySelective(Category record);
 

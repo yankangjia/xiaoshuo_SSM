@@ -1,17 +1,28 @@
 package com.ykjzone.pojo;
 
+import org.hibernate.validator.constraints.URL;
+
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 public class Banner {
     private Integer id;
 
+    @NotNull
     private Integer priority;
 
+    @URL
     private String image_url;
 
+    @URL
     private String link_to;
 
     private Date pub_time;
+
+    public Banner(){
+        super();
+        pub_time = new Date();
+    }
 
     public Integer getId() {
         return id;

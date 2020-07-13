@@ -16,7 +16,28 @@ public class BannerServiceImpl implements BannerService {
 
     public List<Banner> getBanners() {
         BannerExample example = new BannerExample();
+        example.setOrderByClause("priority");
         List<Banner> banners = bannerMapper.selectByExample(example);
         return banners;
+    }
+
+    @Override
+    public Banner getById(Integer id) {
+        return bannerMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public int addBanner(Banner banner) {
+        return bannerMapper.insert(banner);
+    }
+
+    @Override
+    public int updateBanner(Banner banner) {
+        return bannerMapper.updateByPrimaryKeySelective(banner);
+    }
+
+    @Override
+    public int deleteById(Integer id) {
+        return bannerMapper.deleteByPrimaryKey(id);
     }
 }

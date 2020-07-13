@@ -1,6 +1,11 @@
 package com.ykjzone.controller;
 
 import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.mysql.cj.Session;
+import com.ykjzone.page.Page;
+import com.ykjzone.page.RankPage;
+import com.ykjzone.page.WholePage;
 import com.ykjzone.pojo.*;
 import com.ykjzone.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,11 +13,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-@RequestMapping("/novel")
+@RequestMapping("")
 public class NovelController {
     @Autowired
     BannerService bannerService;
@@ -24,9 +33,15 @@ public class NovelController {
     ChapterService chapterService;
     @Autowired
     ExcellentworksService excellentworksService;
+    @Autowired
+    CollectService collectService;
+    @Autowired
+    CategoryService categoryService;
+    @Autowired
+    TagService tagService;
 
     @RequestMapping("")
-    public String index(Model model){
+    public String index(Model model, HttpSession session){
         String[][] all_category_name = Category.CATEGORY_NAME;
 
         List<Banner> banners = bannerService.getBanners();
@@ -57,13 +72,20 @@ public class NovelController {
         model.addAttribute("new_novels_1_11",new_novels_1_11);
         model.addAttribute("cate_hot_novels",cate_hot_novels);
         model.addAttribute("rank_novels",rank_novels);
+        model.addAttribute("user", session.getAttribute("user"));
         return "novel/index";
     }
 
     @RequestMapping("/detail/{id}")
-    public String detail(Model model, @PathVariable String id){
+    public String detail(HttpSession session, Model model, @PathVariable String id){
         Novel novel = novelService.getByPrimaryKey(id);
         Boolean is_collect = false;
+        User user = (User) session.getAttribute("user");
+        if(user != null){
+            List<UserCollect> collects = collectService.getByUidAndNid(user.getId(),id);
+            if(collects.size() > 0)
+                is_collect = true;
+        }
         List<Chapter> chapters = chapterService.getChaptersByNovelId(id);
         PageHelper.offsetPage(0,12);
         List<Novel> recommend_novels = novelService.getRecommendNovels(novel.getCategory().getId(),false);
@@ -80,11 +102,19 @@ public class NovelController {
     }
 
     @RequestMapping("/chapter/{id}")
-    public String chapter(Model model, @PathVariable String id){
+    public String chapter(HttpSession session, Model model, @PathVariable String id){
         Chapter chapter = chapterService.getChapterById(id);
         String[][] all_category_name = Category.CATEGORY_NAME;
+        User user = (User) session.getAttribute("user");
+        Boolean is_collect = false;
+        if(user != null){
+            List<UserCollect> collects = collectService.getByUidAndNid(user.getId(),chapter.getNovel().getId());
+            if(collects.size() > 0)
+                is_collect = true;
+        }
 
-        // 翻页
+
+        // 获取前后页的chapter_id
         if(chapter.getNumber() > 1){
             int previous_num = chapter.getNumber() - 1;
             String previous_id = chapterService.getIdByNovelAndNum(chapter.getNovel(),previous_num);
@@ -96,8 +126,111 @@ public class NovelController {
             model.addAttribute("next_id",next_id);
         }
 
+        model.addAttribute("user",user);
+        model.addAttribute("is_collect",is_collect);
         model.addAttribute("chapter",chapter);
         model.addAttribute("all_category_name",all_category_name);
         return "novel/chapter";
+    }
+
+    @RequestMapping("/whole")
+    public String whole(Model model, WholePage page){
+        // 获取小说
+        NovelExample example = page.getExample();
+        PageHelper.startPage(page.getP(),page.getCount());
+        List<Novel> novels = novelService.getByExampleWithBLOBs(example);
+        model.addAttribute("novels",novels);
+        // 获取并设置作品总数
+        int total = (int) new PageInfo<>(novels).getTotal();
+        page.setTotal(total);
+        // 获取分页参数
+        model.addAllAttributes(page.getParams());
+        model.addAllAttributes(page.getQuery_strings());
+        // 获取推荐小说
+        PageHelper.offsetPage(0,20);
+        List<Novel> recommend_novels = novelService.getRecommendNovels(false);
+        model.addAttribute("recommend_novels",recommend_novels);
+        // 获取所有分类
+        List<Category> categories = categoryService.getCategories();
+        model.addAttribute("categories",categories);
+        model.addAttribute("all_category_name",Category.CATEGORY_NAME);
+        return "novel/whole";
+    }
+
+    @RequestMapping("/rank")
+    public String rank(Model model, RankPage page){
+        NovelExample example = page.getExample();
+        PageHelper.startPage(page.getP(),page.getCount());
+        List<Novel> novels = novelService.getByExampleWithBLOBs(example);
+        model.addAttribute("novels",novels);
+
+        int total = (int) new PageInfo<>(novels).getTotal();
+        page.setTotal(total);
+        model.addAllAttributes(page.getParams());
+
+        List<Category> categories = categoryService.getCategories();
+        model.addAttribute("categories",categories);
+
+        PageHelper.offsetPage(0,20);
+        List<Novel> recommend_novels = novelService.getRecommendNovels(false);
+        model.addAttribute("recommend_novels",recommend_novels);
+
+        return "novel/rank";
+    }
+
+    @RequestMapping("/{category_name}")
+    public String category(Model model, @PathVariable String category_name){
+        String[] category = new String[2];
+        for(String[] c : Category.CATEGORY_NAME){
+            if(c[0].equals(category_name)){
+                category = c;
+                break;
+            }
+        }
+//        if(category == null || category.length == 0)
+////            return 404;
+        model.addAttribute("category_en_name",category[0]);
+        model.addAttribute("category_ch_name",category[1]);;
+        Category c = categoryService.getAndTagsByName(category[1]);
+        model.addAttribute("tags",c.getTags());
+        model.addAttribute("all_category_name",Category.CATEGORY_NAME);
+        model.addAttribute("category",c);
+
+        PageHelper.offsetPage(0,15);
+        List<Novel> recommend_novels = novelService.getRecommendNovels(true);
+        List<Novel> recommend_novels_1_5 = new ArrayList<>();
+        List<Novel> recommend_novels_6_15 = new ArrayList<>();
+        for(int i = 0; i < recommend_novels.size(); i++){
+            if(i < 5)
+                recommend_novels_1_5.add(recommend_novels.get(i));
+            else
+                recommend_novels_6_15.add(recommend_novels.get(i));
+        }
+
+        PageHelper.offsetPage(0,10);
+        List<Novel> rank_novels = novelService.getRankNovels();
+        Novel rank_novels_1 = rank_novels.remove(0);
+
+        PageHelper.offsetPage(0,19);
+        List<Novel> new_novels = novelService.getNewNovels();
+        Novel new_novels_1 = null;
+        List<Novel> new_novels_2_10 = new ArrayList<>();
+        List<Novel> new_novels_11_19 = new ArrayList<>();
+        for(int i = 0; i < new_novels.size(); i++){
+            if(i == 0)
+                new_novels_1 = new_novels.get(i);
+            else if(i < 10)
+                new_novels_2_10.add(new_novels.get(i));
+            else
+                new_novels_11_19.add(new_novels.get(i));
+        }
+        model.addAttribute("recommend_novels_1_5",recommend_novels_1_5);
+        model.addAttribute("recommend_novels_6_15",recommend_novels_6_15);
+        model.addAttribute("rank_novels_1",rank_novels_1);
+        model.addAttribute("rank_novels",rank_novels);
+        model.addAttribute("new_novels_1",new_novels_1);
+        model.addAttribute("new_novels_2_10",new_novels_2_10);
+        model.addAttribute("new_novels_11_19",new_novels_11_19);
+        return "novel/category";
     }
 }

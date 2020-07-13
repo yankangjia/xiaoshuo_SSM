@@ -104,4 +104,7 @@
       novel_id = #{novel_id,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <delete id="deleteByNovelId" parameterType="java.lang.String">
+    delete from xsauth_user_collect where novel_id = #{novel_id,jdbcType=VARCHAR}
+  </delete>
 </mapper>

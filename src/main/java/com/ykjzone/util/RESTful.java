@@ -13,15 +13,9 @@ public class RESTful {
     public static int METHOD_ERROR = 405;      //方法错误
     public static int SERVER_ERROR = 500;      // 服务器内部错误
 
-    public static String result(int code, String message, Map<String,String> data){
+    public static String _result(int code, String message, Map<String,Object> data){
         ObjectMapper mapper = new ObjectMapper();
         // 将Map类型的data变量转为String类型
-//        String dataString = "";
-//        try {
-//            dataString = mapper.writeValueAsString(data);
-//        } catch (JsonProcessingException e) {
-//            e.printStackTrace();
-//        }
 
         String resultString = "";
         Map<String,Object> resultMap = new HashMap<String,Object>();
@@ -37,26 +31,44 @@ public class RESTful {
         return resultString;
     }
 
+    public static String result(int code, String message, Map<String,Object> data){
+        return _result(code, message, data);
+    }
+
+    public static String result(int code, String message){
+        return _result(code, message, new HashMap<String, Object>());
+    }
+
     public static String ok(){
-        return result(OK, "", null);
+        return result(OK, "");
+    }
+
+    public static String ok(Map<String,Object> data){
+        return result(OK, "", data);
     }
 
 
-    public static String params_error(String message, Map<String,String> data){
+    public static String params_error(String message, Map<String,Object> data){
         return result(PARAMS_ERROR, message, data);
     }
 
-
-    public static String unauth(String message, Map<String,String> data){
-        return result(UNAUTH, message, data);
-
+    public static String params_error(String message){
+        return result(PARAMS_ERROR, message, new HashMap<>());
     }
 
-    public static String method_error(String message, Map<String,String> data){
+    public static String unauth(String message, Map<String,Object> data){
+        return result(UNAUTH, message, data);
+    }
+
+    public static String unauth(String message){
+        return result(UNAUTH, message, new HashMap<>());
+    }
+
+    public static String method_error(String message, Map<String,Object> data){
         return result(METHOD_ERROR, message, data);
     }
 
-    public static String  server_error(String message, Map<String,String> data){
+    public static String  server_error(String message, Map<String,Object> data){
         return result(SERVER_ERROR, message, data);
     }
 }

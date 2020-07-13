@@ -78,10 +78,10 @@ AdSet.prototype.listenAddSubmitEvent = function(){
         var url = null;
         var message = null;
         if(id === '0'){
-            url = '/cms/ad_add/';
+            url = '/cms/add_ad/';
             message = '添加成功';
         } else{
-            url = '/cms/ad_edit/';
+            url = '/cms/edit_ad/';
             message = '编辑成功';
         }
         var data = {
@@ -102,7 +102,7 @@ AdSet.prototype.listenAddSubmitEvent = function(){
                     window.messageBox.showSuccess(message);
                     submitBtn.parents('div.thumbnail').find('img.thumbnail').attr('src',ad.image_url);
                     submitBtn.parents('div.thumbnail').find('.thumbnail-btn').children('img').attr('src',ad.image_url);
-                    console.log(submitBtn.parents('div.thumbnail'))
+                    submitBtn.parents('div.thumbnail').find('.text-center').text(ad['hint']);
                     submitBtn.siblings('.close-btn').trigger("click");
                 }
             }

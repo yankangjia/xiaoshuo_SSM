@@ -12,10 +12,10 @@ Collect.prototype.listenCollectEvent = function(){
         var url = '';
         var tooltipTitle = '';
         if(collected ==='true') {
-            url = '/novel/cancel_collect/';
+            url = '/account/cancel_collect/';
             tooltipTitle = '点击收藏';
         } else{
-            url = '/novel/collect/';
+            url = '/account/collect/';
             tooltipTitle = '已收藏';
         }
         myajax.post({

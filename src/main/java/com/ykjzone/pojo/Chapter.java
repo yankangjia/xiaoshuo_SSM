@@ -1,22 +1,35 @@
 package com.ykjzone.pojo;
 
+import com.ykjzone.util.ShortUUID;
+import javax.validation.constraints.*;
 import java.util.Date;
 
 public class Chapter {
     private String id;
 
+    @Size(max = 200, message = "标题最大长度为200字")
     private String title;
 
+    @NotNull(message = "请求参数错误")
     private Integer number;
+
+    @NotNull(message = "请输入内容")
+    private String content;
 
     private Integer words_num;
 
     private Date pub_date;
 
-    private String content;
+    private String novel_id;
 
     // 非数据库字段
     private Novel novel;
+
+
+    public void generate(){
+        id = ShortUUID.generateShortUuid();
+        pub_date = new Date();
+    }
 
     public String getId() {
         return id;
@@ -46,8 +59,14 @@ public class Chapter {
         return words_num;
     }
 
-    public void setWords_num(Integer words_num) {
-        this.words_num = words_num;
+    /**
+     * 统计content的字数 首先要去除html标签、标点符号和换行符
+     */
+    public void setWords_num() {
+        String content_pure = this.content.replaceAll("</?[^>]*?>","");
+        content_pure = content_pure.replaceAll("&nbsp;","");
+        content_pure = content_pure.replaceAll("[~!@#$%^&*()_\\-+=<>?/,.，。？！￥…（）—《》：【】、·“”‘’:;{}\\[\\]|\'\"\\n\\r\\\\  ]","");
+        this.words_num = content_pure.length();
     }
 
     public Novel getNovel() {
@@ -56,6 +75,14 @@ public class Chapter {
 
     public void setNovel(Novel novel) {
         this.novel = novel;
+    }
+
+    public String getNovel_id() {
+        return novel_id;
+    }
+
+    public void setNovel_id(String novel_id) {
+        this.novel_id = novel_id;
     }
 
     public Date getPub_date() {
@@ -70,7 +97,35 @@ public class Chapter {
         return content;
     }
 
+    /**
+     * 将多于的html标签去除，只保留p标签
+     * @param content
+     */
     public void setContent(String content) {
-        this.content = content == null ? null : content.trim();
+        content = content == null ? null : content.trim();
+        this.content = content.replaceAll("</?[^p][^>]*?>","");
+    }
+
+    public static void main(String[] args){
+        String html = "    <div class=\"aside-box-footer\">\n" +
+                "                \n" +
+                "    </div>\n" +
+                "<p > dsdewwerw</p>" +
+                "        <div class=\"profile-intro-name-boxOpration\">\n" +
+                "        <div class='opt-letter-watch-box'>\n" +
+                "            <a class=\"bt-button personal-letter\" href=\"https://me.csdn.net/qq_34063070\" target=\"_blank\" rel=\"noopener\"><p>ewewfsda</p>TA的主页</a>\n" +
+                "        </div>\n" +
+                "        <div class='opt-letter-watch-box'>\n" +
+                "            <a class=\"bt-button personal-letter\" href=https://im.csdn.net/im/main.html?userName=qq_34063070 target=\"_blank\" rel=\"noopener\">私信</a>\n" +
+                "        </div>\n" +
+                "        <div class=\"opt-letter-watch-box\">\n" +
+                "                            <a class=\"personal-watch bt-button\" id=\"btnAttent\" data-report-click='{\"mod\":\"popu_379\",\"ab\":\"new\",\"extend1\":\"个人主页未关注\"}'>关注</a>\n" +
+                "                    </div>\n" +
+                "    </div>";
+        String content_pure = html.replaceAll("</?[^>]*?>","");
+        content_pure = content_pure.replaceAll("&nbsp;","");
+        content_pure = content_pure.replaceAll("[~!@#$%^&*()_\\-+=<>?/,.，。？！￥…（）—《》：【】、·“”‘’:;{}\\[\\]|\'\"\\n\\r\\\\  ]","");
+        System.out.println("content_pure: \n" + content_pure);
+        System.out.println("length: " + content_pure.length());
     }
 }

@@ -19,4 +19,19 @@ public class AdvertisementServiceImpl implements AdvertisementService {
         List<Advertisement> ads = advertisementMapper.selectByExample(example);
         return ads;
     }
+
+    @Override
+    public int addAdvertisement(Advertisement advertisement) {
+        return advertisementMapper.insert(advertisement);
+    }
+
+    @Override
+    public int updateAdvertisement(Advertisement advertisement) {
+        return advertisementMapper.updateByPrimaryKeySelective(advertisement);
+    }
+
+//    @Override
+//    public int deleteAdvertisement(Integer id) {
+//        return deleteAdvertisement(id);
+//    }
 }

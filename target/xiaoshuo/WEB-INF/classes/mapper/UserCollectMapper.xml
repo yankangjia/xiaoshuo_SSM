@@ -59,14 +59,24 @@
     from xsauth_user_collect
     where id = #{id,jdbcType=INTEGER}
   </select>
+  <select id="selectByUidAndNid" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from xsauth_user_collect
+    where user_id = #{user_id,jdbcType=INTEGER} and novel_id = #{novel_id,jdbcType=INTEGER}
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from xsauth_user_collect
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.ykjzone.pojo.UserCollect" useGeneratedKeys="true">
+  <insert id="insert" parameterType="java.lang.String" useGeneratedKeys="true">
     insert into xsauth_user_collect (user_id, novel_id)
     values (#{user_id,jdbcType=VARCHAR}, #{novel_id,jdbcType=VARCHAR})
   </insert>
+  <delete id="delete" parameterType="java.lang.String" >
+    delete from xsauth_user_collect
+    where user_id = #{user_id,jdbcType=VARCHAR} and novel_id = #{novel_id,jdbcType=VARCHAR}
+  </delete>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.ykjzone.pojo.UserCollect" useGeneratedKeys="true">
     insert into xsauth_user_collect
     <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -104,4 +114,7 @@
       novel_id = #{novel_id,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <delete id="deleteByNovelId" parameterType="java.lang.String">
+    delete from xsauth_user_collect where novel_id = #{novel_id,jdbcType=VARCHAR}
+  </delete>
 </mapper>

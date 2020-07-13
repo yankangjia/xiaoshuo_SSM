@@ -21,13 +21,14 @@ Chapter.prototype.listenCollectEvent = function(){
     var novelId = $('#novel-id').attr('data-novel-id');
     $('.collect-btn').click(function(){
         myajax.post({
-            'url': '/novel/collect/',
+            'url': '/account/collect/',
             'data': {
                 'novel_id': novelId,
             },
             'success': function(result){
                 if(result['code'] === 200) {
                     window.messageBox.showSuccess('收藏成功');
+                    $('.collect-btn').parent().html('<span class="collected">已在书架</span>');
                 }
             }
         })

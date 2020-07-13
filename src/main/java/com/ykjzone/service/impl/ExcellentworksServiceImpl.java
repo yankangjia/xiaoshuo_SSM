@@ -19,4 +19,9 @@ public class ExcellentworksServiceImpl implements ExcellentworksService {
         ExcellentworksExample example = new ExcellentworksExample();
         return excellentworksMapper.selectByExample(example);
     }
+
+    @Override
+    public int updateExcellentworks(Excellentworks excellentworks) {
+        return excellentworksMapper.updateByPrimaryKeySelective(excellentworks);
+    }
 }
