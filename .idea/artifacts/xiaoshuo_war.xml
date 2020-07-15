@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="xiaoshuo:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>xiaoshuo</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="xiaoshuo.war">
+      <element id="artifact" artifact-name="xiaoshuo:war exploded" />
+    </root>
+  </artifact>
+</component>

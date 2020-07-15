@@ -9,5 +9,8 @@
         <module name="xiaoshuo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="14">
+      <module name="xiaoshuo" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
