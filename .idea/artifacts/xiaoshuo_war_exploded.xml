@@ -58,6 +58,7 @@
         <element id="file-copy" path="$PROJECT_DIR$/target/xiaoshuo/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="xiaoshuo/web/Web" />
+      <element id="dir-copy" path="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF" />
     </root>
   </artifact>
 </component>

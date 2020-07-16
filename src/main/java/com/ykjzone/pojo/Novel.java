@@ -11,13 +11,6 @@ import java.util.List;
 public class Novel {
     private String id;
 
-    public static void main(String[] args){
-        String url = "http://localhost:8080/media/image/account/2020/07/05/3vrDqGhp90.jpg";
-        if(url.matches("^(\\w+://)?\\w+(\\.[\\w]+)*(\\:\\d+)?\\/.*$")){
-            System.out.println("yes");
-        }
-    }
-
     @NotBlank(message = "请输入小说名字")
     @Size(max=200, message = "小说名字最大长度为200")
     private String name;
@@ -209,5 +202,12 @@ public class Novel {
 
     public void setChapters(List<Chapter> chapters){
         this.chapters = chapters;
+    }
+
+    public static void main(String[] args){
+        String url = "http://localhost:8080/media/image/account/2020/07/05/3vrDqGhp90.jpg";
+        if(url.matches("^(\\w+://)?\\w+(\\.[\\w]+)*(\\:\\d+)?\\/.*$")){
+            System.out.println("yes");
+        }
     }
 }

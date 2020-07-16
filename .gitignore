@@ -5,3 +5,7 @@ target/xiaoshuo/node_modules
 src/test
 
 target/xiaoshuo/media
+
+src/main/resources/jdbc.properties
+
+.gitignore

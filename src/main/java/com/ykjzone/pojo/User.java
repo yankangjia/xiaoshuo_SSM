@@ -1,10 +1,12 @@
 package com.ykjzone.pojo;
 
 //import javax.validation.constraints.*;
+import com.ykjzone.util.MD5;
 import org.hibernate.validator.constraints.NotBlank;
 
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+import java.security.MessageDigest;
 import java.util.Date;
 import java.util.List;
 

@@ -3,6 +3,7 @@ package com.ykjzone.validate;
 import com.ykjzone.pojo.User;
 import com.ykjzone.service.UserService;
 import com.ykjzone.util.ImageCaptcha;
+import com.ykjzone.util.MD5;
 import com.ykjzone.util.Redis;
 import com.ykjzone.util.ShortUUID;
 import redis.clients.jedis.Jedis;
@@ -15,7 +16,6 @@ import java.util.regex.Pattern;
 
 public class UserValidator extends Validator {
     private UserService userService;
-
     private String telephone;
     private String username;
     private String password1;
@@ -153,7 +153,7 @@ public class UserValidator extends Validator {
         user.setId(ShortUUID.generateShortUuid());
         user.setTelephone(telephone);
         user.setUsername(username);
-        user.setPassword(password1);
+        user.setPassword(MD5.str2MD5(password1));
         user.setDate_joined(new Date());
         user.setIs_active(true);
         user.setIs_author(false);

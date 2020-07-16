@@ -1,5 +1,7 @@
 package com.ykjzone.pojo;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import com.ykjzone.util.ShortUUID;
 import javax.validation.constraints.*;
 import java.util.Date;
@@ -107,25 +109,28 @@ public class Chapter {
     }
 
     public static void main(String[] args){
-        String html = "    <div class=\"aside-box-footer\">\n" +
-                "                \n" +
-                "    </div>\n" +
-                "<p > dsdewwerw</p>" +
-                "        <div class=\"profile-intro-name-boxOpration\">\n" +
-                "        <div class='opt-letter-watch-box'>\n" +
-                "            <a class=\"bt-button personal-letter\" href=\"https://me.csdn.net/qq_34063070\" target=\"_blank\" rel=\"noopener\"><p>ewewfsda</p>TA的主页</a>\n" +
-                "        </div>\n" +
-                "        <div class='opt-letter-watch-box'>\n" +
-                "            <a class=\"bt-button personal-letter\" href=https://im.csdn.net/im/main.html?userName=qq_34063070 target=\"_blank\" rel=\"noopener\">私信</a>\n" +
-                "        </div>\n" +
-                "        <div class=\"opt-letter-watch-box\">\n" +
-                "                            <a class=\"personal-watch bt-button\" id=\"btnAttent\" data-report-click='{\"mod\":\"popu_379\",\"ab\":\"new\",\"extend1\":\"个人主页未关注\"}'>关注</a>\n" +
-                "                    </div>\n" +
-                "    </div>";
-        String content_pure = html.replaceAll("</?[^>]*?>","");
-        content_pure = content_pure.replaceAll("&nbsp;","");
-        content_pure = content_pure.replaceAll("[~!@#$%^&*()_\\-+=<>?/,.，。？！￥…（）—《》：【】、·“”‘’:;{}\\[\\]|\'\"\\n\\r\\\\  ]","");
-        System.out.println("content_pure: \n" + content_pure);
-        System.out.println("length: " + content_pure.length());
+//        String html = "<code><span class=\"hljs-keyword\">set</span> <span class=\"hljs-keyword\">java</span> environment\n" +
+//                "JAVA_HOME=/usr/<span class=\"hljs-keyword\">java</span>/jdk<span class=\"hljs-number\">-14.0</span><span class=\"hljs-number\">.1</span>     \n" +
+//                "JRE_HOME=/usr/<span class=\"hljs-keyword\">java</span>/jdk<span class=\"hljs-number\">-14.0</span><span class=\"hljs-number\">.1</span>/jre     \n" +
+//                "CLASS_PATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib\n" +
+//                "<span class=\"hljs-keyword\">PATH</span>=$<span class=\"hljs-keyword\">PATH</span>:$JAVA_HOME/<span class=\"hljs-keyword\">bin</span>:$JRE_HOME/<span class=\"hljs-keyword\">bin</span>\n" +
+//                "<span class=\"hljs-keyword\">export</span> JAVA_HOME JRE_HOME CLASS_PATH <span class=\"hljs-keyword\">PATH</span></code>";
+//        String content_pure = html.replaceAll("</?[^>]*?>","");
+//        content_pure = content_pure.replaceAll("&nbsp;","");
+//        content_pure = content_pure.replaceAll("[~!@#%^&*()\\-+<>?,，。？！￥…（）—《》：【】、·“”‘’;{}\\[\\]|\'\"\\n\\r\\\\]","");
+////        content_pure = content_pure.replaceAll("[~!@#$%^&*()_\\-+=<>?/,.，。？！￥…（）—《》：【】、·“”‘’:;{}\\[\\]|\'\"\\n\\r\\\\  ]","");
+//        System.out.println("content_pure: \n" + content_pure);
+//        System.out.println("length: " + content_pure.length());
+
+        Logger log = Logger.getLogger("lavasoft");
+        log.setLevel(Level.INFO);
+        Logger log1 = Logger.getLogger("lavasoft");
+        System.out.println(log==log1);     //true
+        Logger log2 = Logger.getLogger("lavasoft.blog");
+        log2.setLevel(Level.WARNING);
+
+        log.info("aaa");
+        log2.info("bbb");
+        log2.fine("fine");
     }
 }

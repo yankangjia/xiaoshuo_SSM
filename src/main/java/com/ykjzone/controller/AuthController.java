@@ -7,6 +7,7 @@ import com.ykjzone.service.GroupService;
 import com.ykjzone.service.PermissionService;
 import com.ykjzone.service.UserService;
 import com.ykjzone.util.ImageCaptcha;
+import com.ykjzone.util.MD5;
 import com.ykjzone.util.RESTful;
 import com.ykjzone.util.Redis;
 import com.ykjzone.validate.UserValidator;
@@ -64,7 +65,7 @@ public class AuthController {
     @RequestMapping(value = "/login", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
     @ResponseBody
     public String login(String telephone, String password, String remember, HttpSession session){
-        User user = userService.getByTelephoneAndPassword(telephone, password);
+        User user = userService.getByTelephoneAndPassword(telephone, MD5.str2MD5(password));
         if(user == null)
             return RESTful.unauth("手机号或密码错误");
         if(user.getIs_active() == false)
