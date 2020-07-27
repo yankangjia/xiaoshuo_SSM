@@ -11,36 +11,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9ca66f1-7b5a-4d12-84ec-0191a3b7aced" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/xiaoshuo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/util/MD5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/xiaoshuo.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/util/MD5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/xiaoshuo/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/META-INF/xiaoshuo.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/MD5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/xiaoshuo/maven/com.ykjzone/xiaoshuo/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/xiaoshuo/maven/com.ykjzone/xiaoshuo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/xiaoshuo_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/xiaoshuo_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Chapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Chapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Novel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Novel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/validate/NovelValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/validate/UserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/validate/UserValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Chapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Chapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Novel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Novel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/validate/NovelValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/validate/UserValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/validate/UserValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Chapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Chapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Novel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Novel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/validate/NovelValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/validate/UserValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/validate/UserValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xiaoshuo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xiaoshuo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/CMSController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/CMSController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/NovelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/NovelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/CategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/CMSController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/CMSController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/NovelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/NovelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/CategoryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/CategoryMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/CategoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/CMSController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/CMSController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/NovelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/NovelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/CategoryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/CategoryMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/CategoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/CategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/func.tld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/package.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.19885057" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
@@ -103,6 +103,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat9">
+    <configuration name="Category" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ykjzone.pojo.Category" />
+      <module name="xiaoshuo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ykjzone.pojo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Chapter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ykjzone.pojo.Chapter" />
       <module name="xiaoshuo" />
@@ -122,6 +135,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ykjzone.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NovelController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ykjzone.controller.NovelController" />
+      <module name="xiaoshuo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ykjzone.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -277,13 +303,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.tomcat9" />
       <item itemvalue="Application.Chapter" />
       <item itemvalue="Application.User" />
       <item itemvalue="Application.MD5" />
+      <item itemvalue="Application.NovelController" />
+      <item itemvalue="Application.Category" />
+      <item itemvalue="Tomcat Server.tomcat9" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Category" />
+        <item itemvalue="Application.NovelController" />
         <item itemvalue="Application.MD5" />
         <item itemvalue="Application.User" />
         <item itemvalue="Application.Chapter" />
@@ -303,7 +333,9 @@
       <workItem from="1594801617472" duration="589000" />
       <workItem from="1594802254628" duration="971000" />
       <workItem from="1594803347702" duration="3203000" />
-      <workItem from="1594806673752" duration="11140000" />
+      <workItem from="1594806673752" duration="27917000" />
+      <workItem from="1595563164787" duration="34000" />
+      <workItem from="1595837787507" duration="992000" />
     </task>
     <servers />
   </component>
@@ -335,81 +367,81 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="405" y="6" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1366.738@0.0.1366.738" timestamp="1594800887188" />
-    <state x="463" y="110" key="FileChooserDialogImpl" timestamp="1594890770157">
+    <state x="463" y="110" key="FileChooserDialogImpl" timestamp="1594908338706">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="110" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1594890770157" />
-    <state width="905" height="233" key="GridCell.Tab.0.bottom" timestamp="1594907055190">
+    <state x="463" y="110" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1594908338706" />
+    <state width="1306" height="194" key="GridCell.Tab.0.bottom" timestamp="1595189455029">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="233" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1594907055190" />
-    <state width="905" height="233" key="GridCell.Tab.0.center" timestamp="1594907055190">
+    <state width="1306" height="194" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1595189455029" />
+    <state width="1306" height="194" key="GridCell.Tab.0.center" timestamp="1595189455029">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="233" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1594907055190" />
-    <state width="905" height="233" key="GridCell.Tab.0.left" timestamp="1594907055190">
+    <state width="1306" height="194" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1595189455029" />
+    <state width="1306" height="194" key="GridCell.Tab.0.left" timestamp="1595189455029">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="233" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1594907055190" />
-    <state width="905" height="233" key="GridCell.Tab.0.right" timestamp="1594907055190">
+    <state width="1306" height="194" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1595189455029" />
+    <state width="1306" height="194" key="GridCell.Tab.0.right" timestamp="1595189455029">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="233" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1594907055190" />
-    <state width="905" height="233" key="GridCell.Tab.1.bottom" timestamp="1594907055102">
+    <state width="1306" height="194" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1595189455029" />
+    <state width="905" height="156" key="GridCell.Tab.1.bottom" timestamp="1595189454987">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="233" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1594907055102" />
-    <state width="905" height="233" key="GridCell.Tab.1.center" timestamp="1594907055102">
+    <state width="905" height="156" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
+    <state width="905" height="156" key="GridCell.Tab.1.center" timestamp="1595189454987">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="233" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1594907055102" />
-    <state width="905" height="233" key="GridCell.Tab.1.left" timestamp="1594907055102">
+    <state width="905" height="156" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
+    <state width="905" height="156" key="GridCell.Tab.1.left" timestamp="1595189454987">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="233" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1594907055102" />
-    <state width="905" height="233" key="GridCell.Tab.1.right" timestamp="1594907055102">
+    <state width="905" height="156" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
+    <state width="905" height="156" key="GridCell.Tab.1.right" timestamp="1595189454987">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="233" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1594907055102" />
-    <state width="905" height="233" key="GridCell.Tab.2.bottom" timestamp="1594907055103">
+    <state width="905" height="156" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
+    <state width="905" height="156" key="GridCell.Tab.2.bottom" timestamp="1595189454987">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="233" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1594907055103" />
-    <state width="905" height="233" key="GridCell.Tab.2.center" timestamp="1594907055102">
+    <state width="905" height="156" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
+    <state width="905" height="156" key="GridCell.Tab.2.center" timestamp="1595189454987">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="233" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1594907055102" />
-    <state width="905" height="233" key="GridCell.Tab.2.left" timestamp="1594907055102">
+    <state width="905" height="156" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
+    <state width="905" height="156" key="GridCell.Tab.2.left" timestamp="1595189454987">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="233" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1594907055102" />
-    <state width="905" height="233" key="GridCell.Tab.2.right" timestamp="1594907055102">
+    <state width="905" height="156" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
+    <state width="905" height="156" key="GridCell.Tab.2.right" timestamp="1595189454987">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="233" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1594907055102" />
-    <state width="905" height="261" key="GridCell.Tab.3.bottom" timestamp="1594806579751">
+    <state width="905" height="156" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
+    <state width="905" height="156" key="GridCell.Tab.3.bottom" timestamp="1595189454988">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="261" key="GridCell.Tab.3.bottom/0.0.1366.738@0.0.1366.738" timestamp="1594806579751" />
-    <state width="905" height="261" key="GridCell.Tab.3.center" timestamp="1594806579751">
+    <state width="905" height="156" key="GridCell.Tab.3.bottom/0.0.1366.738@0.0.1366.738" timestamp="1595189454988" />
+    <state width="905" height="156" key="GridCell.Tab.3.center" timestamp="1595189454988">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="261" key="GridCell.Tab.3.center/0.0.1366.738@0.0.1366.738" timestamp="1594806579751" />
-    <state width="905" height="261" key="GridCell.Tab.3.left" timestamp="1594806579750">
+    <state width="905" height="156" key="GridCell.Tab.3.center/0.0.1366.738@0.0.1366.738" timestamp="1595189454988" />
+    <state width="905" height="156" key="GridCell.Tab.3.left" timestamp="1595189454988">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="261" key="GridCell.Tab.3.left/0.0.1366.738@0.0.1366.738" timestamp="1594806579750" />
-    <state width="905" height="261" key="GridCell.Tab.3.right" timestamp="1594806579751">
+    <state width="905" height="156" key="GridCell.Tab.3.left/0.0.1366.738@0.0.1366.738" timestamp="1595189454988" />
+    <state width="905" height="156" key="GridCell.Tab.3.right" timestamp="1595189454988">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="905" height="261" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1594806579751" />
+    <state width="905" height="156" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1595189454988" />
     <state x="263" y="103" key="IDE.errors.dialog" timestamp="1594803231786">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="263" y="103" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1594803231786" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1594890796376">
+    <state x="184" y="0" key="SettingsEditor" timestamp="1594915425974">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1594890796376" />
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1594915425974" />
   </component>
 </project>

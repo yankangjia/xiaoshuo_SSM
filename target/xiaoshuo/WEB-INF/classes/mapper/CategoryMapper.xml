@@ -86,7 +86,7 @@
     from novel_category c, novel_tag t
     where c.id = t.category_id and c.id = #{id,jdbcType=INTEGER}
   </select>
-  <select id="selectAndTagsByName" resultMap="AndTagsResultMap">
+  <select id="selectAndTagsByName" parameterType="java.lang.String" resultMap="AndTagsResultMap">
     select
     <include refid="And_Tags_Column_List" />
     from novel_category c, novel_tag t

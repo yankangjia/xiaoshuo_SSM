@@ -10,7 +10,7 @@ public interface CategoryService {
 
     public List<Category> getCategoriesAndTags();
 
-    public Category getOneAndTags(String id);
+    public Category getOneAndTags(Integer id);
 
     public List<Category> getAndNovelsNum();
 

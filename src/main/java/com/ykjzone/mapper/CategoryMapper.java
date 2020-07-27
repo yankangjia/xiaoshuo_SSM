@@ -19,7 +19,8 @@ public interface CategoryMapper {
     Category selectByPrimaryKey(Integer id);
 
     List<Category> selectAndTags();
-    Category selectOneAndTags(String id);
+
+    Category selectOneAndTags(Integer id);
 
     List<Category> selectAndNovelsNum();
 

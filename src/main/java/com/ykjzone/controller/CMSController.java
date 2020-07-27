@@ -306,7 +306,7 @@ public class CMSController {
     }
 
     @RequestMapping("tag_detail")
-    public String tagDetail(Model model, String category_id){
+    public String tagDetail(Model model, Integer category_id){
         Category category = categoryService.getOneAndTags(category_id);
         model.addAttribute("category",category);
         return "cms/tag_detail";

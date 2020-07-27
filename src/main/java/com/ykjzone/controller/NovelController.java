@@ -181,7 +181,9 @@ public class NovelController {
     @RequestMapping("/{category_name}")
     public String category(Model model, @PathVariable String category_name){
         String[] category = new String[2];
+        int count = 0;
         for(String[] c : Category.CATEGORY_NAME){
+            count++;
             if(c[0].equals(category_name)){
                 category = c;
                 break;
@@ -189,11 +191,15 @@ public class NovelController {
         }
         if(category[0] == null)
             return "redirect:/404";
-        System.out.println("category_en_name" + category[0]);
-        System.out.println("category_ch_name" + category[1]);
-        model.addAttribute("category_en_name",category[0]);
-        model.addAttribute("category_ch_name",category[1]);;
-        Category c = categoryService.getAndTagsByName(category[1]);
+
+        model.addAttribute("category_en_name", category[0]);
+        model.addAttribute("category_ch_name", category[1]);
+
+//        Category c = categoryService.getAndTagsByName(category[1]);
+        Category c = categoryService.getOneAndTags(count);
+        if(c == null)
+            return "redirect:/404";
+
         model.addAttribute("tags",c.getTags());
         model.addAttribute("all_category_name",Category.CATEGORY_NAME);
         model.addAttribute("category",c);

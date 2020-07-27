@@ -47,10 +47,10 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.10" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.10" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.0" />
-          <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:5.2.4.Final" />
           <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.2.1.Final" />
           <element id="library" level="project" name="Maven: com.fasterxml:classmate:1.1.0" />
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
           <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.3.0" />
         </element>
       </element>
@@ -58,7 +58,6 @@
         <element id="file-copy" path="$PROJECT_DIR$/target/xiaoshuo/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="xiaoshuo/web/Web" />
-      <element id="dir-copy" path="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF" />
     </root>
   </artifact>
 </component>
