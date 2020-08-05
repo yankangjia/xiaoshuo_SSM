@@ -12,350 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d9ca66f1-7b5a-4d12-84ec-0191a3b7aced" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/xiaoshuo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xiaoshuo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xiaoshuo/xiaoshuo.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/xiaoshuo/xiaoshuo.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/CMSController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/CMSController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/NovelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/controller/NovelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/UserReadMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/mapper/UserReadMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/page/WholePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/page/WholePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/UserRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/pojo/UserRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/ReadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/ReadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/NovelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/NovelServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/ReadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ykjzone/service/impl/ReadServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/NovelMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/NovelMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserReadMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserReadMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/account/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/account/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/account/my_collect.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/account/my_collect.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/account/recently_read.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/account/recently_read.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/novel/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/dist/css/novel/index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dist/css/novel/index.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/src/css/novel/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/src/css/novel/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/xiaoshuo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/AccountController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/AccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/CMSController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/CMSController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/CMSController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/NovelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/controller/NovelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/interceptor/AuthInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/interceptor/AuthInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/interceptor/CMSInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/interceptor/CMSInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/AdvertisementMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/AdvertisementMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/BannerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/BannerMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/CategoryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/CategoryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/ChapterMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/ChapterMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/ContentTypeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/ContentTypeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/ExcellentworksMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/ExcellentworksMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/GroupMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/GroupMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/GroupPermissionsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/GroupPermissionsMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/NovelMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/NovelMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/PermissionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/PermissionMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/TagMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/TagMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserCollectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserCollectMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserGroupMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserGroupMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserPermissionsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserPermissionsMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserReadMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/mapper/UserReadMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/page/ChapterPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/page/ChapterPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/page/ChapterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/page/ChapterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/page/NovelPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/page/NovelPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/page/NovelPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/page/NovelPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/page/Page$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/page/Page$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/page/Page$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/page/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/page/Page.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/page/RankPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/page/RankPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/page/RankPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/page/RankPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/page/WholePage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/page/WholePage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/page/WholePage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/page/WholePage$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/page/WholePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/page/WholePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Advertisement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Advertisement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/AdvertisementExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/AdvertisementExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/AdvertisementExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/AdvertisementExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/AdvertisementExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/AdvertisementExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/AdvertisementExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/AdvertisementExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Banner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Banner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/BannerExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/BannerExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/BannerExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/BannerExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/BannerExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/BannerExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/BannerExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/BannerExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/CategoryExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/CategoryExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/CategoryExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/CategoryExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/CategoryExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/CategoryExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/CategoryExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/CategoryExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Chapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Chapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ChapterExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ChapterExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ChapterExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ChapterExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ChapterExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ChapterExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ChapterExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ChapterExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ContentType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ContentType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ContentTypeExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ContentTypeExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ContentTypeExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ContentTypeExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ContentTypeExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ContentTypeExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ContentTypeExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ContentTypeExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Excellentworks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Excellentworks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ExcellentworksExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ExcellentworksExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ExcellentworksExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ExcellentworksExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ExcellentworksExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ExcellentworksExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ExcellentworksExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/ExcellentworksExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Group.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Group.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupPermissions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupPermissions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupPermissionsExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupPermissionsExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupPermissionsExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupPermissionsExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupPermissionsExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupPermissionsExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupPermissionsExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/GroupPermissionsExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Novel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Novel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/NovelExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/NovelExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/NovelExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/NovelExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/NovelExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/NovelExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/NovelExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/NovelExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Permission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Permission.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/PermissionExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/PermissionExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/PermissionExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/PermissionExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/PermissionExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/PermissionExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/PermissionExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/PermissionExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Tag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/Tag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/TagExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/TagExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/TagExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/TagExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/TagExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/TagExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/TagExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/TagExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserCollect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserCollect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserCollectExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserCollectExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserCollectExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserCollectExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserCollectExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserCollectExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserCollectExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserCollectExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserGroup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserGroupExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserGroupExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserGroupExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserGroupExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserGroupExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserGroupExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserGroupExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserGroupExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserPermissions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserPermissions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserPermissionsExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserPermissionsExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserPermissionsExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserPermissionsExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserPermissionsExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserPermissionsExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserPermissionsExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserPermissionsExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserRead.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserRead.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserReadExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserReadExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserReadExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserReadExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserReadExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserReadExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserReadExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/pojo/UserReadExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/AdvertisementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/AdvertisementService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/BannerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/BannerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/ChapterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/ChapterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/CollectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/CollectService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/ExcellentworksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/ExcellentworksService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/GroupService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/GroupService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/NovelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/NovelService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/PermissionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/PermissionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/ReadService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/ReadService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/TagService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/TagService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/UserGroupService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/UserGroupService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/AdvertisementServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/AdvertisementServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/BannerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/BannerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/CategoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/ChapterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/ChapterServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/CollectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/CollectServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/ExcellentworksServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/ExcellentworksServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/GroupServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/GroupServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/NovelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/NovelServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/PermissionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/PermissionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/ReadServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/ReadServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/TagServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/TagServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/UserGroupServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/UserGroupServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/Filters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/util/Filters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/ImageCaptcha.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/util/ImageCaptcha.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/MD5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/util/MD5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/MybatisGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/util/MybatisGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/OverIsMergeablePlugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/util/OverIsMergeablePlugin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/Param.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/util/Param.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/RESTful.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/util/RESTful.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/Redis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/util/Redis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/ShortUUID.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/util/ShortUUID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/util/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/util/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/validate/UserValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/validate/UserValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ykjzone/validate/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ykjzone/validate/Validator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/NovelMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/NovelMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserReadMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserReadMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/META-INF/xiaoshuo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/AccountController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/AccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/CMSController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/CMSController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/CMSController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/NovelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/controller/NovelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/interceptor/AuthInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/interceptor/AuthInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/interceptor/CMSInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/interceptor/CMSInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/AdvertisementMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/AdvertisementMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/BannerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/BannerMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/CategoryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/CategoryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/ChapterMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/ChapterMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/ContentTypeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/ContentTypeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/ExcellentworksMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/ExcellentworksMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/GroupMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/GroupMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/GroupPermissionsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/GroupPermissionsMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/NovelMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/NovelMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/PermissionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/PermissionMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/TagMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/TagMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserCollectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserCollectMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserGroupMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserGroupMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserPermissionsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserPermissionsMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserReadMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/mapper/UserReadMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/ChapterPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/ChapterPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/ChapterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/ChapterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/NovelPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/NovelPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/NovelPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/NovelPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/Page$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/Page$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/Page$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/Page.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/RankPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/RankPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/RankPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/RankPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/WholePage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/WholePage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/WholePage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/WholePage$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/WholePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/page/WholePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Advertisement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Advertisement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/AdvertisementExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/AdvertisementExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/AdvertisementExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/AdvertisementExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/AdvertisementExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/AdvertisementExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/AdvertisementExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/AdvertisementExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Banner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Banner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/BannerExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/BannerExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/BannerExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/BannerExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/BannerExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/BannerExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/BannerExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/BannerExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/CategoryExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/CategoryExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/CategoryExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/CategoryExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/CategoryExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/CategoryExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/CategoryExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/CategoryExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Chapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Chapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ChapterExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ChapterExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ChapterExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ChapterExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ChapterExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ChapterExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ChapterExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ChapterExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ContentType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ContentType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ContentTypeExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ContentTypeExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ContentTypeExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ContentTypeExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ContentTypeExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ContentTypeExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ContentTypeExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ContentTypeExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Excellentworks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Excellentworks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ExcellentworksExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ExcellentworksExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ExcellentworksExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ExcellentworksExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ExcellentworksExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ExcellentworksExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ExcellentworksExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/ExcellentworksExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Group.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Group.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupPermissions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupPermissions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupPermissionsExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupPermissionsExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupPermissionsExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupPermissionsExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupPermissionsExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupPermissionsExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupPermissionsExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/GroupPermissionsExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Novel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Novel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/NovelExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/NovelExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/NovelExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/NovelExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/NovelExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/NovelExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/NovelExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/NovelExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Permission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Permission.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/PermissionExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/PermissionExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/PermissionExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/PermissionExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/PermissionExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/PermissionExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/PermissionExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/PermissionExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Tag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/Tag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/TagExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/TagExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/TagExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/TagExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/TagExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/TagExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/TagExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/TagExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserCollect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserCollect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserCollectExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserCollectExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserCollectExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserCollectExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserCollectExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserCollectExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserCollectExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserCollectExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserGroup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserGroupExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserGroupExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserGroupExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserGroupExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserGroupExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserGroupExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserGroupExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserGroupExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserPermissions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserPermissions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserPermissionsExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserPermissionsExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserPermissionsExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserPermissionsExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserPermissionsExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserPermissionsExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserPermissionsExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserPermissionsExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserRead.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserRead.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserReadExample$Criteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserReadExample$Criteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserReadExample$Criterion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserReadExample$Criterion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserReadExample$GeneratedCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserReadExample$GeneratedCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserReadExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/pojo/UserReadExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/AdvertisementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/AdvertisementService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/BannerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/BannerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/ChapterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/ChapterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/CollectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/CollectService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/ExcellentworksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/ExcellentworksService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/GroupService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/GroupService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/NovelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/NovelService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/PermissionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/PermissionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/ReadService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/ReadService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/TagService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/TagService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/UserGroupService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/UserGroupService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/AdvertisementServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/AdvertisementServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/BannerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/BannerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/CategoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/ChapterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/ChapterServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/CollectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/CollectServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/ExcellentworksServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/ExcellentworksServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/GroupServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/GroupServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/NovelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/NovelServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/PermissionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/PermissionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/ReadServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/ReadServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/TagServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/TagServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/UserGroupServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/UserGroupServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/Filters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/Filters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/ImageCaptcha.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/ImageCaptcha.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/MD5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/MD5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/MybatisGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/MybatisGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/OverIsMergeablePlugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/OverIsMergeablePlugin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/Param.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/Param.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/RESTful.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/RESTful.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/Redis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/Redis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/ShortUUID.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/ShortUUID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/util/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/validate/UserValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/validate/UserValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/validate/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/com/ykjzone/validate/Validator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/NovelMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/NovelMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/UserReadMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/classes/mapper/UserReadMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/account/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/account/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/account/my_collect.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/account/my_collect.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/account/recently_read.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/jsp/account/recently_read.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/dist/css/novel/index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/dist/css/novel/index.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/xiaoshuo/src/css/novel/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/target/xiaoshuo/src/css/novel/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -409,7 +69,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19885057" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -651,7 +311,7 @@
       <workItem from="1596011837898" duration="11303000" />
       <workItem from="1596210814089" duration="684000" />
       <workItem from="1596427125253" duration="1853000" />
-      <workItem from="1596597252182" duration="3203000" />
+      <workItem from="1596597252182" duration="5363000" />
     </task>
     <servers />
   </component>
@@ -693,65 +353,65 @@
     </state>
     <state x="463" y="109" key="FileChooserDialogImpl/0.0.1366.734@0.0.1366.734" timestamp="1596210921480" />
     <state x="463" y="110" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1594908338706" />
-    <state width="1323" height="195" key="GridCell.Tab.0.bottom" timestamp="1596187553479">
+    <state width="1121" height="228" key="GridCell.Tab.0.bottom" timestamp="1596610318228">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1323" height="195" key="GridCell.Tab.0.bottom/0.0.1366.734@0.0.1366.734" timestamp="1596187553479" />
+    <state width="1121" height="228" key="GridCell.Tab.0.bottom/0.0.1366.734@0.0.1366.734" timestamp="1596610318228" />
     <state width="1306" height="194" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1595189455029" />
-    <state width="1323" height="195" key="GridCell.Tab.0.center" timestamp="1596187553478">
+    <state width="1121" height="228" key="GridCell.Tab.0.center" timestamp="1596610318228">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1323" height="195" key="GridCell.Tab.0.center/0.0.1366.734@0.0.1366.734" timestamp="1596187553478" />
+    <state width="1121" height="228" key="GridCell.Tab.0.center/0.0.1366.734@0.0.1366.734" timestamp="1596610318228" />
     <state width="1306" height="194" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1595189455029" />
-    <state width="1323" height="195" key="GridCell.Tab.0.left" timestamp="1596187553478">
+    <state width="1121" height="228" key="GridCell.Tab.0.left" timestamp="1596610318228">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1323" height="195" key="GridCell.Tab.0.left/0.0.1366.734@0.0.1366.734" timestamp="1596187553478" />
+    <state width="1121" height="228" key="GridCell.Tab.0.left/0.0.1366.734@0.0.1366.734" timestamp="1596610318228" />
     <state width="1306" height="194" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1595189455029" />
-    <state width="1323" height="195" key="GridCell.Tab.0.right" timestamp="1596187553478">
+    <state width="1121" height="228" key="GridCell.Tab.0.right" timestamp="1596610318228">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1323" height="195" key="GridCell.Tab.0.right/0.0.1366.734@0.0.1366.734" timestamp="1596187553478" />
+    <state width="1121" height="228" key="GridCell.Tab.0.right/0.0.1366.734@0.0.1366.734" timestamp="1596610318228" />
     <state width="1306" height="194" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1595189455029" />
-    <state width="1121" height="205" key="GridCell.Tab.1.bottom" timestamp="1596187553472">
+    <state width="1121" height="228" key="GridCell.Tab.1.bottom" timestamp="1596610318229">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1121" height="205" key="GridCell.Tab.1.bottom/0.0.1366.734@0.0.1366.734" timestamp="1596187553472" />
+    <state width="1121" height="228" key="GridCell.Tab.1.bottom/0.0.1366.734@0.0.1366.734" timestamp="1596610318229" />
     <state width="905" height="156" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
-    <state width="1121" height="205" key="GridCell.Tab.1.center" timestamp="1596187553472">
+    <state width="1121" height="228" key="GridCell.Tab.1.center" timestamp="1596610318228">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1121" height="205" key="GridCell.Tab.1.center/0.0.1366.734@0.0.1366.734" timestamp="1596187553472" />
+    <state width="1121" height="228" key="GridCell.Tab.1.center/0.0.1366.734@0.0.1366.734" timestamp="1596610318228" />
     <state width="905" height="156" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
-    <state width="1121" height="205" key="GridCell.Tab.1.left" timestamp="1596187553472">
+    <state width="1121" height="228" key="GridCell.Tab.1.left" timestamp="1596610318228">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1121" height="205" key="GridCell.Tab.1.left/0.0.1366.734@0.0.1366.734" timestamp="1596187553472" />
+    <state width="1121" height="228" key="GridCell.Tab.1.left/0.0.1366.734@0.0.1366.734" timestamp="1596610318228" />
     <state width="905" height="156" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
-    <state width="1121" height="205" key="GridCell.Tab.1.right" timestamp="1596187553472">
+    <state width="1121" height="228" key="GridCell.Tab.1.right" timestamp="1596610318228">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1121" height="205" key="GridCell.Tab.1.right/0.0.1366.734@0.0.1366.734" timestamp="1596187553472" />
+    <state width="1121" height="228" key="GridCell.Tab.1.right/0.0.1366.734@0.0.1366.734" timestamp="1596610318228" />
     <state width="905" height="156" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
-    <state width="1121" height="205" key="GridCell.Tab.2.bottom" timestamp="1596187553473">
+    <state width="1121" height="228" key="GridCell.Tab.2.bottom" timestamp="1596610318229">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1121" height="205" key="GridCell.Tab.2.bottom/0.0.1366.734@0.0.1366.734" timestamp="1596187553473" />
+    <state width="1121" height="228" key="GridCell.Tab.2.bottom/0.0.1366.734@0.0.1366.734" timestamp="1596610318229" />
     <state width="905" height="156" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
-    <state width="1121" height="205" key="GridCell.Tab.2.center" timestamp="1596187553472">
+    <state width="1121" height="228" key="GridCell.Tab.2.center" timestamp="1596610318229">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1121" height="205" key="GridCell.Tab.2.center/0.0.1366.734@0.0.1366.734" timestamp="1596187553472" />
+    <state width="1121" height="228" key="GridCell.Tab.2.center/0.0.1366.734@0.0.1366.734" timestamp="1596610318229" />
     <state width="905" height="156" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
-    <state width="1121" height="205" key="GridCell.Tab.2.left" timestamp="1596187553472">
+    <state width="1121" height="228" key="GridCell.Tab.2.left" timestamp="1596610318229">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1121" height="205" key="GridCell.Tab.2.left/0.0.1366.734@0.0.1366.734" timestamp="1596187553472" />
+    <state width="1121" height="228" key="GridCell.Tab.2.left/0.0.1366.734@0.0.1366.734" timestamp="1596610318229" />
     <state width="905" height="156" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
-    <state width="1121" height="205" key="GridCell.Tab.2.right" timestamp="1596187553473">
+    <state width="1121" height="228" key="GridCell.Tab.2.right" timestamp="1596610318229">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state width="1121" height="205" key="GridCell.Tab.2.right/0.0.1366.734@0.0.1366.734" timestamp="1596187553473" />
+    <state width="1121" height="228" key="GridCell.Tab.2.right/0.0.1366.734@0.0.1366.734" timestamp="1596610318229" />
     <state width="905" height="156" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1595189454987" />
     <state width="905" height="156" key="GridCell.Tab.3.bottom" timestamp="1595189454988">
       <screen x="0" y="0" width="1366" height="738" />
@@ -773,10 +433,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="263" y="103" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1594803231786" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1596597800226">
+    <state x="184" y="0" key="SettingsEditor" timestamp="1596609423840">
       <screen x="0" y="0" width="1366" height="734" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.734@0.0.1366.734" timestamp="1596597800226" />
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.734@0.0.1366.734" timestamp="1596609423840" />
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1594915425974" />
     <state x="339" y="166" key="run.anything.popup" timestamp="1595948867069">
       <screen x="0" y="0" width="1366" height="734" />
