@@ -52,6 +52,7 @@
     <bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="typeAliasesPackage" value="com.ykjzone.pojo" />
         <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
         <property name="mapperLocations" value="classpath:mapper/*.xml"/>
         <!--PageHelper-->
         <property name="plugins">

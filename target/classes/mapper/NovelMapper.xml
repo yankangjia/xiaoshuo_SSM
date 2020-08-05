@@ -128,9 +128,8 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectReadedNovelsByUserId" parameterType="java.lang.String" resultMap="BaseResultMap">
+  <select id="selectReadedNovelsByUserId" resultMap="BaseResultMap">
     select
-    distinct
     <include refid="Base_Column_List" />
     from novel n, novel_category c, novel_tag t, xsauth_user u, xsauth_user_read uread
     <if test="is_collect">
@@ -145,7 +144,6 @@
   </select>
   <select id="selectCollectByUserId" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
-    distinct
     <include refid="Base_Column_List" />
     from novel n, novel_category c, novel_tag t, xsauth_user u, xsauth_user_collect ucollect
     where n.category_id = c.id and n.tag_id = t.id and n.author_id = u.id and ucollect.novel_id = n.id

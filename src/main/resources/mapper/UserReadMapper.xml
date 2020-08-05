@@ -38,6 +38,9 @@
   <sql id="Base_Column_List">
     id, user_id, novel_id
   </sql>
+  <select id="select" resultMap="BaseResultMap">
+    select * from xsauth_user_read where user_id = #{user_id,jdbcType=VARCHAR} and novel_id = #{novel_id,jdbcType=VARCHAR}
+  </select>
   <select id="selectByExample" parameterType="com.ykjzone.pojo.UserReadExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
@@ -63,7 +66,7 @@
     delete from xsauth_user_read
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.ykjzone.pojo.UserRead" useGeneratedKeys="true">
+  <insert id="insert" useGeneratedKeys="true">
     insert into xsauth_user_read (user_id, novel_id)
     values (#{user_id,jdbcType=VARCHAR}, #{novel_id,jdbcType=VARCHAR})
   </insert>

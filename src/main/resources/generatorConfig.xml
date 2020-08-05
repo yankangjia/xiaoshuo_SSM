@@ -3,7 +3,6 @@
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
-
     <context id="DB2Tables"    targetRuntime="MyBatis3">
         <!--避免生成重复代码的插件-->
         <!--<plugin type="com.how2java.tmall.util.OverIsMergeablePlugin" />-->

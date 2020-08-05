@@ -105,9 +105,9 @@ public class WholePage extends Page {
             urlQuery.append("&category_id=" + category_id);
         if(is_free != null)
             urlQuery.append("&is_free=" + is_free);
-        if(is_free != null)
+        if(is_complete != null)
             urlQuery.append("&is_complete=" + is_complete);
-        if(is_free != null)
+        if(sort != null)
             urlQuery.append("&sort=" + sort);
         return urlQuery.toString();
     }

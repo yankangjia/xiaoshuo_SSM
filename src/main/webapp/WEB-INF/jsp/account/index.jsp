@@ -117,7 +117,7 @@
                         <div class="box-body">
                             <div class="row read-group">
                                 <c:choose>
-                                    <c:when test="${readed_novels != null}">
+                                    <c:when test="${readed_novels != null and !empty readed_novels}">
                                         <c:forEach items="${readed_novels}" var="novel_map">
                                             <div class="base-novel-div col-xs-6 col-sm-4 col-md-2 text-center" data-novel-id="${novel_map.novel.id}">
                                                 <div class="thumbnail">

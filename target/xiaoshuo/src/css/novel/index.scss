@@ -613,12 +613,22 @@ header {
                                 float: right;
                                 position: relative;
                                 .novel-title {
-
+                                    height: 18px;
+                                    line-height: 18px;
+                                    a {
+                                        display: block;
+                                        height: 100%;
+                                        padding: 0;
+                                        margin: 0;
+                                    }
                                 }
                                 .novel-profile {
                                     font-size: 13px;
                                     color: #454545;
-                                    margin-top: 8px;
+                                    margin: 2px 0;
+                                    height: 55px;
+                                    line-height: 18px;
+                                    overflow: hidden;
                                 }
                                 .novel-author {
                                     width: 100%;

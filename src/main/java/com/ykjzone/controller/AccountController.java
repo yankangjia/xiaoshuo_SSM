@@ -47,6 +47,7 @@ public class AccountController {
         model.addAttribute("user",user);
 
         List<Map<String,Object>> readed_novels = novelService.getReadedNovels(user, 6);
+        System.out.println(readed_novels);
         model.addAttribute("readed_novels",readed_novels);
 
         PageHelper.offsetPage(0,6);
@@ -363,7 +364,7 @@ public class AccountController {
             String imageURL = domain + relativePath + "/" + fileName;
             Map<String,Object> data = new HashMap<>();
             data.put("url",imageURL);
-            return RESTful.result(200,"", data);
+            return RESTful.ok(data);
         } catch (IOException e) {
             e.printStackTrace();
             return RESTful.params_error("图片上传错误");

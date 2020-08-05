@@ -244,7 +244,7 @@ public class CMSController {
             String imageURL = domain + relativePath + "/" + fileName;
             Map<String,Object> data = new HashMap<>();
             data.put("url",imageURL);
-            return RESTful.result(200,"", data);
+            return RESTful.ok(data);
         } catch (IOException e) {
             e.printStackTrace();
             return RESTful.params_error("图片上传错误");

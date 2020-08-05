@@ -175,9 +175,9 @@
                                     </a>
                                 </div>
                                 <div class="novel-info">
-                                    <div class="novel-title">
+                                    <h4 class="novel-title">
                                         <a href="/detail/${novel.id}" target="_blank">${novel.name}</a>
-                                    </div>
+                                    </h4>
                                     <div class="novel-profile editor-recommend">
                                             <%--{{ novel.profile|striptags|strip|truncatechars:50 }}--%>
                                             ${func:profile_truncate(novel.profile,57)}

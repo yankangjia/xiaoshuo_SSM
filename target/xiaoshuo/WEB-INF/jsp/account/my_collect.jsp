@@ -38,43 +38,45 @@
                         </div>
                         <div class="box-body">
                             <div class="row collect-group">
-                                <c:if test="${collected_novels != null}">
-                                    <c:forEach items="${collected_novels}" var="novel">
-                                        <div class="base-novel-div col-md-2 text-center" data-novel-id="${novel.id}">
-                                            <div class="thumbnail">
-                                                <a href="/detail/${novel.id}">
-                                                    <img src="${novel.cover_url}" style="width: 150px;" class="img-thumbnail" alt="">
-                                                </a>
-                                                <div class="caption">
-                                                    <h4>
-                                                        <c:choose>
-                                                            <c:when test="${fn:length(novel.name) > 6}">
-                                                                <a href="/detail/${novel.id}" class="text-danger size-sm">${func:truncate(novel.name,8)}</a>
-                                                            </c:when>
-                                                            <c:otherwise>
-                                                                <a href="/detail/${novel.id}" class="text-danger">${novel.name}</a>
-                                                            </c:otherwise>
-                                                        </c:choose>
-                                                    </h4>
-                                                    <h5>${novel.category.name} · ${novel.author.username}</h5>
-                                                    <p class="clearfix">
-                                                        <a href="/detail/${novel.id}" class="btn btn-danger pull-left">继续阅读</a>
-                                                        <button type="button" class="btn btn-warning collent-btn pull-right" data-collected="true" data-toggle="tooltip" data-placement="bottom" title="已收藏">
-                                                            <span class="glyphicon glyphicon-star-empty"></span>
-                                                        </button>
-                                                    </p>
+                                <c:choose>
+                                    <c:when test="${collected_novels != null and !empty collected_novels}">
+                                        <c:forEach items="${collected_novels}" var="novel">
+                                            <div class="base-novel-div col-md-2 text-center" data-novel-id="${novel.id}">
+                                                <div class="thumbnail">
+                                                    <a href="/detail/${novel.id}">
+                                                        <img src="${novel.cover_url}" style="width: 150px;" class="img-thumbnail" alt="">
+                                                    </a>
+                                                    <div class="caption">
+                                                        <h4>
+                                                            <c:choose>
+                                                                <c:when test="${fn:length(novel.name) > 6}">
+                                                                    <a href="/detail/${novel.id}" class="text-danger size-sm">${func:truncate(novel.name,8)}</a>
+                                                                </c:when>
+                                                                <c:otherwise>
+                                                                    <a href="/detail/${novel.id}" class="text-danger">${novel.name}</a>
+                                                                </c:otherwise>
+                                                            </c:choose>
+                                                        </h4>
+                                                        <h5>${novel.category.name} · ${novel.author.username}</h5>
+                                                        <p class="clearfix">
+                                                            <a href="/detail/${novel.id}" class="btn btn-danger pull-left">继续阅读</a>
+                                                            <button type="button" class="btn btn-warning collent-btn pull-right" data-collected="true" data-toggle="tooltip" data-placement="bottom" title="已收藏">
+                                                                <span class="glyphicon glyphicon-star-empty"></span>
+                                                            </button>
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
+                                        </c:forEach>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <div class="col-md-offset-4 col-md-4 text-center">
+                                            <div class="page-header">
+                                                <h1>空空如也&nbsp;&nbsp;&nbsp;<a href="/"><small>去看看 >></small></a></h1>
+                                            </div>
                                         </div>
-                                    </c:forEach>
-                                </c:if>
-                                <c:if test="${empty collected_novels}">
-                                    <div class="col-md-offset-4 col-md-4 text-center">
-                                        <div class="page-header">
-                                            <h1>空空如也&nbsp;&nbsp;&nbsp;<a href="/"><small>去看看 >></small></a></h1>
-                                        </div>
-                                    </div>
-                                </c:if>
+                                    </c:otherwise>
+                                </c:choose>
                             </div>
                         </div>
                         <div class="box-footer">

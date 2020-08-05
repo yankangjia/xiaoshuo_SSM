@@ -34,6 +34,8 @@ public class NovelController {
     @Autowired
     ExcellentworksService excellentworksService;
     @Autowired
+    ReadService readService;
+    @Autowired
     CollectService collectService;
     @Autowired
     CategoryService categoryService;
@@ -79,8 +81,9 @@ public class NovelController {
     @RequestMapping("/detail/{id}")
     public String detail(HttpSession session, Model model, @PathVariable String id){
         Novel novel = novelService.getByPrimaryKey(id);
-        Boolean is_collect = false;
         User user = (User) session.getAttribute("user");
+        // 判断用户是否收藏
+        Boolean is_collect = false;
         if(user != null){
             List<UserCollect> collects = collectService.getByUidAndNid(user.getId(),id);
             if(collects.size() > 0)
@@ -95,8 +98,8 @@ public class NovelController {
         model.addAttribute("novel", novel);
         model.addAttribute("chapters", chapters);
         model.addAttribute("is_collect",is_collect);
-        model.addAttribute("recent_title",chapters.get(0).getTitle());
-        model.addAttribute("recent_date",chapters.get(0).getPub_date());
+        model.addAttribute("recent_title",chapters.size() > 0 ? chapters.get(0).getTitle() : "暂无章节");
+        model.addAttribute("recent_date",chapters.size() > 0 ? chapters.get(0).getPub_date() : "");
         model.addAttribute("recommend_novels",recommend_novels);
         return "novel/detail";
     }
@@ -108,6 +111,13 @@ public class NovelController {
         User user = (User) session.getAttribute("user");
         Boolean is_collect = false;
         if(user != null){
+            // 设置为最近阅读
+            List<UserRead> urs = readService.select(user, chapter.getNovel());
+            if(urs == null || urs.size() == 0){        // 未收藏
+                readService.insert(user, chapter.getNovel());
+                System.out.println("收藏");
+            }
+            // 判断用户是否收藏
             List<UserCollect> collects = collectService.getByUidAndNid(user.getId(),chapter.getNovel().getId());
             if(collects.size() > 0)
                 is_collect = true;

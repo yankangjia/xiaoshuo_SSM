@@ -98,9 +98,18 @@ public class NovelServiceImpl implements NovelService {
     public List<Map<String,Object>> getReadedNovels(User user, int count) {
         PageHelper.offsetPage(0,count);
         List<Novel> readed_novels =  novelMapper.selectReadedNovelsByUserId(user.getId(), false);
+        System.out.println("readed_novels");
+        for(Novel novel : readed_novels){
+            System.out.println(novel);
+        }
         // 查看每一个Novel是否被收藏
         PageHelper.offsetPage(0,count);
         List<Novel> read_collected_novels = novelMapper.selectReadedNovelsByUserId(user.getId(), true);
+        System.out.println("read_collected_novels");
+        for(Novel novel : read_collected_novels){
+            System.out.println(novel);
+        }
+        System.out.println("read_collected_novels: " + read_collected_novels);
         Iterator read_iterator = readed_novels.iterator();
         Iterator read_collected_iterator = read_collected_novels.iterator();
         // novels: [{"novel":Novel,"is_collect":true}, ...]
@@ -119,6 +128,13 @@ public class NovelServiceImpl implements NovelService {
                 else map.put("is_collect", false);
                 novels.add(map);
             }
+        }
+        while(read_iterator.hasNext()){
+            Novel novel  = (Novel) read_iterator.next();;
+            Map<String,Object> map = new HashMap<>();
+            map.put("novel",novel);
+            map.put("is_collect", false);
+            novels.add(map);
         }
         return novels;
     }
